@@ -11,21 +11,33 @@ const faqs = [
   },
   {
     id: 2,
-    question: "How far in advance should I order my child's communion dress?",
+    question: "Can I Place An Order Over The Phone?",
     answer:
-      "We recommend ordering communion dresses at least 2-3 months in advance to allow time for any necessary alterations and to ensure availability.",
+      "You can place an order over the phone or from our online store.  Give us a call during our open hours and we can help you at 215-230-4572.",
   },
   {
     id: 3,
-    question: "Do you offer alterations for communion dresses?",
+    question: "Which Items Do You Carry In-Store?",
     answer:
-      "Yes, we provide professional alteration services to ensure your child's dress fits perfectly for their special day.",
+      "Every Item in our store is also available online and vice versa.  If you see the item within our online store, you can come see it in the store as well. (Depending on Stock Levels).",
   },
   {
     id: 4,
-    question: "What should I bring for my child's fitting?",
+    question: "Do You Have Changing Rooms?",
     answer:
-      "Please bring the shoes your child will wear with the outfit and any special undergarments. This helps ensure the most accurate fit.",
+      "Yes, we changing rooms available for your children to try on items as necessary.",
+  },
+  {
+    id: 5,
+    question: "Do You Offer Gift Wrapping?",
+    answer:
+      "Gift wrapping is offered all year.  Give us a call during our open hours and we can help you at 215-230-4572.",
+  },
+  {
+    id: 6,
+    question: "What Is Your Return Policy?",
+    answer:
+      " Item(s) must be turned within 30 days of receiving it. To exchange an item, contact bambinisworld.info@gmail.com with your order #, name, and the item you wish to exchange. All items must be returned with all tags still attached. You can view our full return policy.",
   },
 ];
 
