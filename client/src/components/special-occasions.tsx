@@ -6,8 +6,8 @@ export default function SpecialOccasions() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl font-bold text-navy mb-4">
-              A Dress For That<br />
+            <h2 className="text-3xl font-bold mb-4">
+              <span style={{ color: '#F8B4BE' }}>A Dress For That</span><br />
               <span className="text-blue-600">Special Occasion</span>
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
