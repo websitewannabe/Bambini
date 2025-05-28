@@ -23,7 +23,7 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+              src="/assets/images/hero.png"
               alt="Bambini's World storefront"
               className="rounded-xl shadow-lg w-full h-auto"
             />
