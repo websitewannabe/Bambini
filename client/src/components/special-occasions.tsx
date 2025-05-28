@@ -38,25 +38,25 @@ export default function SpecialOccasions() {
                 src="assets/images/zebra.jpeg"
                 alt="Zebra plush toy"
                 className="rounded-lg shadow-md"
-                style={{ border: '3px dotted #FFB85C' }}
+                style={{ border: "3px dotted #FFB85C" }}
               />
               <img
                 src="/assets/images/babybling.webp"
                 alt="Baby bling accessories"
                 className="rounded-lg shadow-md"
-                style={{ border: '3px dotted #FFB85C' }}
+                style={{ border: "3px dotted #FFB85C" }}
               />
               <img
                 src="assets/images/lion.jpeg"
                 alt="Lion plush toy"
                 className="rounded-lg shadow-md"
-                style={{ border: '3px dotted #FFB85C' }}
+                style={{ border: "3px dotted #FFB85C" }}
               />
               <img
                 src="assets/images/book.webp"
                 alt="Children's book"
                 className="rounded-lg shadow-md"
-                style={{ border: '3px dotted #FFB85C' }}
+                style={{ border: "3px dotted #FFB85C" }}
               />
             </div>
           </div>
@@ -66,13 +66,13 @@ export default function SpecialOccasions() {
               <br />& Gifts
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Complete the perfect look with our carefully curated selection of
-              accessories. From delicate headbands to formal shoes, we have
-              everything you need to make your little one's outfit absolutely
-              perfect.
+              What children’s boutique would be complete without those perfect
+              gifts for your loved ones? Bambini’s World carries an
+              ever-changing variety of must-have gifts and accessories for any
+              child.
             </p>
             <Button className="bg-warm-orange hover:bg-orange-600 text-white px-8 py-3">
-              Shop Accessories
+              Shop Now
             </Button>
           </div>
         </div>
@@ -86,9 +86,10 @@ export default function SpecialOccasions() {
               Will Look Great
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              From everyday casual wear to special occasion outfits, our boys'
-              collection offers style and comfort. Find the perfect outfit for
-              your little gentleman with our premium selection of clothing.
+              Girls can’t have all the fun! We have sleepwear, outfits,
+              outerwear, toys, gifts and so much more for your little boy to
+              look his best. Search our store for all our boy merchandise by
+              clicking the button below
             </p>
             <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
               Shop Boys
@@ -97,12 +98,12 @@ export default function SpecialOccasions() {
           <div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1519689373023-dd07c7988603?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400"
+                src="assets/images/boy.webp"
                 alt="Boys formal outfit"
                 className="rounded-lg shadow-md"
               />
               <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400"
+                src="assets/images/boyclothes.webp"
                 alt="Boys casual outfit"
                 className="rounded-lg shadow-md"
               />
