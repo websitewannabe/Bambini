@@ -8,7 +8,7 @@ export default function SpecialOccasions() {
           <div>
             <h2 className="text-3xl font-bold text-navy mb-4">
               A Dress For That<br />
-              <span className="text-light-blue">Special Occasion</span>
+              <span className="text-blue-600">Special Occasion</span>
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
               From first communions to baptisms, we understand the importance of these precious moments. 
