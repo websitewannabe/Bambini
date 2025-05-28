@@ -38,21 +38,25 @@ export default function SpecialOccasions() {
                 src="assets/images/zebra.jpeg"
                 alt="Zebra plush toy"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
               <img
                 src="/assets/images/babybling.webp"
                 alt="Baby bling accessories"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
               <img
                 src="assets/images/lion.jpeg"
                 alt="Lion plush toy"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
               <img
                 src="assets/images/book.webp"
                 alt="Children's book"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
             </div>
           </div>
