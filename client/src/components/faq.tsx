@@ -7,7 +7,7 @@ const faqs = [
     id: 1,
     question: "What Are Your Store Hours & Location?",
     answer:
-      "Yes, we offer personalized fitting appointments to ensure the perfect fit for your child's special occasion outfit. Please call us to schedule an appointment.",
+      "Open Hours: Mon-Sat 11:00 AM – 6:00 PM, Sun 12:00 PM – 4:00 PM. Address: 1589 N Main Street Warrington, PA 18976",
   },
   {
     id: 2,
