@@ -6,42 +6,42 @@ const categories = [
     id: 1,
     name: "Boys Clothing",
     description: "Explore Our Lines of Infant, Baby, & Toddler Clothing for boys",
-    image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    image: "/images/boysClothing.jpg",
     buttonClass: "bg-light-blue hover:bg-blue-600"
   },
   {
     id: 2,
     name: "Girls Clothing",
     description: "Explore Our Lines of Infant, Baby, & Toddler Clothing for girls",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    image: "/images/girlsClothing.webp",
     buttonClass: "bg-soft-pink hover:bg-pink-600"
   },
   {
     id: 3,
     name: "Footwear",
     description: "Explore Our girls and boys footwear for Infant, Baby, & Toddler",
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    image: "/images/footwear.webp",
     buttonClass: "bg-gray-800 hover:bg-gray-700"
   },
   {
     id: 4,
     name: "Communion",
     description: "Explore Our Communion Dresses for Infant, Baby, Toddler, and Girls.",
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    image: "/images/communion.webp",
     buttonClass: "bg-soft-pink hover:bg-pink-600"
   },
   {
     id: 5,
     name: "Accessories & Gifts",
     description: "Explore Our Variety of Infant, Baby, & Toddler Gifts for boys and girls",
-    image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    image: "/images/accessories.webp",
     buttonClass: "bg-warm-orange hover:bg-orange-600"
   },
   {
     id: 6,
     name: "Baptism",
     description: "Explore Our Christening Dresses for Infant, Baby, & Toddlers.",
-    image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+    image: "/images/baptism.webp",
     buttonClass: "bg-soft-pink hover:bg-pink-600"
   }
 ];
