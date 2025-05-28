@@ -16,8 +16,7 @@ export default function Hero() {
               World
             </h2>
             <p className="text-white text-lg mb-8 leading-relaxed">
-              Bringing beauty to your special moments with exquisite children's
-              formal wear and everyday essentials.
+              Children's Apparel & Gift Boutique
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

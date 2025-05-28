@@ -10,30 +10,34 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/assets/images/bambiniLogo.png" 
-                alt="Bambini's World Logo" 
+              <img
+                src="/assets/images/bambiniLogo.png"
+                alt="Bambini's World Logo"
                 className="h-12 w-auto"
               />
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Bambini's World</h1>
-              </div>
+              <div></div>
             </div>
           </Link>
-          
+
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link href="/">
-              <a className="text-gray-700 hover:text-navy transition-colors font-medium">Shop</a>
+              <a className="text-gray-700 hover:text-navy transition-colors font-medium">
+                Shop
+              </a>
             </Link>
             <Link href="/baptism">
-              <a className="text-gray-700 hover:text-navy transition-colors font-medium">Baptism</a>
+              <a className="text-gray-700 hover:text-navy transition-colors font-medium">
+                Baptism
+              </a>
             </Link>
             <Link href="/communion">
-              <a className="text-gray-700 hover:text-navy transition-colors font-medium">Communion</a>
+              <a className="text-gray-700 hover:text-navy transition-colors font-medium">
+                Communion
+              </a>
             </Link>
           </nav>
-          
+
           {/* Icons */}
           <div className="flex items-center space-x-4">
             <Button variant="ghost" size="icon">
