@@ -14,17 +14,27 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>123 Main Street</span>
+                <span>1589 N Main Street</span>
               </div>
-              <p className="ml-6">Philadelphia, PA 19123</p>
+              <p className="ml-6">Warrington, PA 18976</p>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>(215) 555-0123</span>
+                <span>(215) 230-4572</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
                 <span>info@bambinisworld.com</span>
               </div>
+              
+              {/* Open Hours */}
+              <div className="mt-4 pt-2 border-t border-gray-600">
+                <h4 className="font-semibold mb-2">Open Hours</h4>
+                <div className="space-y-1 text-xs">
+                  <p>Mon-Sat: 11:00 AM – 6:00 PM</p>
+                  <p>Sun: 12:00 PM – 4:00 PM</p>
+                </div>
+              </div>
+              
               <div className="flex space-x-3 mt-4">
                 <Facebook className="h-5 w-5 text-blue-300 hover:text-white cursor-pointer" />
                 <Instagram className="h-5 w-5 text-blue-300 hover:text-white cursor-pointer" />
