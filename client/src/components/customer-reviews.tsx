@@ -51,9 +51,9 @@ export default function CustomerReviews() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <img
-              src="/images/google-reviews.svg"
+              src="/images/googleReviews.svg"
               alt="Google reviews"
-              className="w-20 h-16 object-cover rounded mr-4"
+              className="w-16 h-16 object-contain mr-4"
             />
             <div>
               <h2 className="text-2xl font-bold text-navy">Our Reviews</h2>
