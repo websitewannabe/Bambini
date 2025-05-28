@@ -131,6 +131,30 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Contact Us */}
+          <div>
+            <h3 className="font-bold text-lg mb-4">Contact Us</h3>
+            <form className="space-y-3">
+              <Input
+                placeholder="Your Name"
+                className="bg-white/10 border-gray-600 text-white placeholder:text-gray-400"
+              />
+              <Input
+                placeholder="Your Email"
+                type="email"
+                className="bg-white/10 border-gray-600 text-white placeholder:text-gray-400"
+              />
+              <Textarea
+                placeholder="Your Message"
+                className="bg-white/10 border-gray-600 text-white placeholder:text-gray-400 resize-none"
+                rows={3}
+              />
+              <Button className="w-full bg-light-blue hover:bg-blue-600">
+                Send Message
+              </Button>
+            </form>
+          </div>
+        </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center text-sm">
           <p>
