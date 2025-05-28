@@ -33,23 +33,23 @@ export default function SpecialOccasions() {
           <div className="order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="https://images.unsplash.com/photo-1522771930-78848d9293e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
-                alt="Baby accessories"
+                src="/images/zebra.jpeg"
+                alt="Zebra plush toy"
                 className="rounded-lg shadow-md"
               />
               <img
-                src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
-                alt="Children's formal shoes"
+                src="/images/babybling.webp"
+                alt="Baby bling accessories"
                 className="rounded-lg shadow-md"
               />
               <img
-                src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
-                alt="Children's accessories"
+                src="/images/lion.jpeg"
+                alt="Lion plush toy"
                 className="rounded-lg shadow-md"
               />
               <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
-                alt="Gift items"
+                src="/images/book.webp"
+                alt="Children's book"
                 className="rounded-lg shadow-md"
               />
             </div>
