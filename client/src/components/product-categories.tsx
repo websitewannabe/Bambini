@@ -7,7 +7,7 @@ const categories = [
     name: "Boys Clothing",
     description:
       "Explore Our Lines of Infant, Baby, & Toddler Clothing for boys",
-    image: "/images/boysClothing.jpg",
+    image: "/images/boysClothing.jpg?v=1",
     buttonClass: "bg-light-blue hover:bg-blue-600",
   },
   {
@@ -15,7 +15,7 @@ const categories = [
     name: "Girls Clothing",
     description:
       "Explore Our Lines of Infant, Baby, & Toddler Clothing for girls",
-    image: "/images/girlsClothing.webp",
+    image: "/images/girlsClothing.webp?v=1",
     buttonClass: "bg-soft-pink hover:bg-pink-600",
   },
   {
@@ -23,7 +23,7 @@ const categories = [
     name: "Footwear",
     description:
       "Explore Our girls and boys footwear for Infant, Baby, & Toddler",
-    image: "/images/footwear.webp",
+    image: "/images/footwear.webp?v=1",
     buttonClass: "bg-gray-800 hover:bg-gray-700",
   },
   {
@@ -31,7 +31,7 @@ const categories = [
     name: "Communion",
     description:
       "Explore Our Communion Dresses for Infant, Baby, Toddler, and Girls.",
-    image: "/images/communion.webp",
+    image: "/images/communion.webp?v=1",
     buttonClass: "bg-soft-pink hover:bg-pink-600",
   },
   {
@@ -39,7 +39,7 @@ const categories = [
     name: "Accessories & Gifts",
     description:
       "Explore Our Variety of Infant, Baby, & Toddler Gifts for boys and girls",
-    image: "/images/accessories.webp",
+    image: "/images/accessories.webp?v=1",
     buttonClass: "bg-warm-orange hover:bg-orange-600",
   },
   {
@@ -47,7 +47,7 @@ const categories = [
     name: "Baptism",
     description:
       "Explore Our Christening Dresses for Infant, Baby, & Toddlers.",
-    image: "/images/baptism.webp",
+    image: "/images/baptism.webp?v=1",
     buttonClass: "bg-soft-pink hover:bg-pink-600",
   },
 ];
