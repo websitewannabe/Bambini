@@ -34,26 +34,34 @@ export default function SpecialOccasions() {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
-              <img
-                src="assets/images/zebra.jpeg"
-                alt="Zebra plush toy"
-                className="rounded-lg shadow-md"
-              />
-              <img
-                src="/assets/images/babybling.webp"
-                alt="Baby bling accessories"
-                className="rounded-lg shadow-md"
-              />
-              <img
-                src="assets/images/lion.jpeg"
-                alt="Lion plush toy"
-                className="rounded-lg shadow-md"
-              />
-              <img
-                src="assets/images/book.webp"
-                alt="Children's book"
-                className="rounded-lg shadow-md"
-              />
+              <div className="rounded-lg shadow-md p-4" style={{ backgroundColor: '#FFB85C', backgroundImage: 'radial-gradient(circle, transparent 2px, #FFB85C 2px)', backgroundSize: '10px 10px' }}>
+                <img
+                  src="/images/zebra.jpeg"
+                  alt="Zebra plush toy"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <div className="rounded-lg shadow-md p-4" style={{ backgroundColor: '#FFB85C', backgroundImage: 'radial-gradient(circle, transparent 2px, #FFB85C 2px)', backgroundSize: '10px 10px' }}>
+                <img
+                  src="/images/babybling.webp"
+                  alt="Baby bling accessories"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <div className="rounded-lg shadow-md p-4" style={{ backgroundColor: '#FFB85C', backgroundImage: 'radial-gradient(circle, transparent 2px, #FFB85C 2px)', backgroundSize: '10px 10px' }}>
+                <img
+                  src="/images/lion.jpeg"
+                  alt="Lion plush toy"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
+              <div className="rounded-lg shadow-md p-4" style={{ backgroundColor: '#FFB85C', backgroundImage: 'radial-gradient(circle, transparent 2px, #FFB85C 2px)', backgroundSize: '10px 10px' }}>
+                <img
+                  src="/images/book.webp"
+                  alt="Children's book"
+                  className="rounded-lg w-full h-auto"
+                />
+              </div>
             </div>
           </div>
           <div className="order-1 md:order-2">
