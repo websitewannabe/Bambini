@@ -35,24 +35,28 @@ export default function SpecialOccasions() {
           <div className="order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="assets/images/zebra.jpeg"
+                src="/images/zebra.jpeg"
                 alt="Zebra plush toy"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
               <img
-                src="/assets/images/babybling.webp"
+                src="/images/babybling.webp"
                 alt="Baby bling accessories"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
               <img
-                src="assets/images/lion.jpeg"
+                src="/images/lion.jpeg"
                 alt="Lion plush toy"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
               <img
-                src="assets/images/book.webp"
+                src="/images/book.webp"
                 alt="Children's book"
                 className="rounded-lg shadow-md"
+                style={{ border: '3px dotted #FFB85C' }}
               />
             </div>
           </div>
