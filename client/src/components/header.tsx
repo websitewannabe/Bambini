@@ -21,20 +21,14 @@ export default function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/">
-              <a className="text-gray-700 hover:text-navy transition-colors font-medium">
-                Shop
-              </a>
+            <Link href="/" className="text-gray-700 hover:text-navy transition-colors font-medium">
+              Shop
             </Link>
-            <Link href="/baptism">
-              <a className="text-gray-700 hover:text-navy transition-colors font-medium">
-                Baptism
-              </a>
+            <Link href="/baptism" className="text-gray-700 hover:text-navy transition-colors font-medium">
+              Baptism
             </Link>
-            <Link href="/communion">
-              <a className="text-gray-700 hover:text-navy transition-colors font-medium">
-                Communion
-              </a>
+            <Link href="/communion" className="text-gray-700 hover:text-navy transition-colors font-medium">
+              Communion
             </Link>
           </nav>
 
