@@ -3,55 +3,51 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useQuery } from "@tanstack/react-query";
 import type { Review } from "@shared/schema";
 
-const reviews = [
-  {
-    id: 1,
-    author: "Alexandra",
-    content:
-      "The selection and quality of baby clothing at this store is excellent!",
-    rating: 5,
-    date: "6/07/2022",
-    initial: "A",
-  },
-  {
-    id: 2,
-    author: "Patricia",
-    content:
-      "Beautiful store with exquisite clothing for children! The owners are extremely helpful and kind.",
-    rating: 5,
-    date: "6/07/2016",
-    initial: "P",
-  },
-  {
-    id: 3,
-    author: "Sal",
-    content:
-      "Grace is terrific! I had to find a baby gift for a very good friend first granddaughter. I had little free time; I searched baby clothes near me, found Bambino's World. She was so kind and helpful.",
-    rating: 5,
-    date: "4/10/2025",
-    initial: "S",
-  },
-  {
-    id: 4,
-    author: "Karan",
-    content:
-      "Great selection, always something different and unique, very helpful staff. Beautiful wrapping if you need it, very personal and welcoming. I've been shopping with them for years and will continue to.",
-    rating: 5,
-    date: "6/07/2022",
-    initial: "K",
-  },
-];
-
 export default function CustomerReviews() {
+  const { data: reviews, isLoading, error } = useQuery<Review[]>({
+    queryKey: ['/api/reviews'],
+    queryFn: async () => {
+      const response = await fetch('/api/reviews');
+      if (!response.ok) {
+        throw new Error('Failed to fetch reviews');
+      }
+      return response.json();
+    }
+  });
+
+  if (isLoading) {
+    return (
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-gray-600">Loading reviews...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error || !reviews) {
+    return (
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <p className="text-gray-600">Unable to load reviews at this time.</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <img
-              src="/assets/images/googleReviews.svg"
+              src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=80"
               alt="Google reviews"
-              className="w-16 h-16 object-contain mr-4"
+              className="w-20 h-16 object-cover rounded mr-4"
             />
             <div>
               <h2 className="text-2xl font-bold text-navy">Our Reviews</h2>
