@@ -10,14 +10,13 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-3">
-              <div className="bg-navy rounded-full p-2">
-                <div className="w-8 h-8 bg-navy rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">BW</span>
-                </div>
-              </div>
+              <img 
+                src="/assets/images/bambiniLogo.png" 
+                alt="Bambini's World Logo" 
+                className="h-12 w-auto"
+              />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Bambini's World</h1>
-                <p className="text-sm text-gray-600">Children's Apparel & Gift Boutique</p>
               </div>
             </div>
           </Link>
