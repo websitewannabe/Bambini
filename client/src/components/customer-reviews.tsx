@@ -4,15 +4,19 @@ import { useQuery } from "@tanstack/react-query";
 import type { Review } from "@shared/schema";
 
 export default function CustomerReviews() {
-  const { data: reviews, isLoading, error } = useQuery<Review[]>({
-    queryKey: ['/api/reviews'],
+  const {
+    data: reviews,
+    isLoading,
+    error,
+  } = useQuery<Review[]>({
+    queryKey: ["/api/reviews"],
     queryFn: async () => {
-      const response = await fetch('/api/reviews');
+      const response = await fetch("/api/reviews");
       if (!response.ok) {
-        throw new Error('Failed to fetch reviews');
+        throw new Error("Failed to fetch reviews");
       }
       return response.json();
-    }
+    },
   });
 
   if (isLoading) {
@@ -32,7 +36,9 @@ export default function CustomerReviews() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <p className="text-gray-600">Unable to load reviews at this time.</p>
+            <p className="text-gray-600">
+              Unable to load reviews at this time.
+            </p>
           </div>
         </div>
       </section>
@@ -45,7 +51,7 @@ export default function CustomerReviews() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <img
-              src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=80"
+              src="/images/google-reviews.svg"
               alt="Google reviews"
               className="w-20 h-16 object-cover rounded mr-4"
             />
@@ -67,14 +73,15 @@ export default function CustomerReviews() {
                     ))}
                   </div>
                 </div>
-                <p className="text-gray-700 mb-4 text-sm line-clamp-4">{review.content}</p>
+                <p className="text-gray-700 mb-4 text-sm line-clamp-4">
+                  {review.content}
+                </p>
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-light-blue rounded-full flex items-center justify-center text-white font-semibold mr-3">
                     {review.author.charAt(0).toUpperCase()}
                   </div>
                   <div>
                     <p className="font-semibold text-navy">{review.author}</p>
-                    <p className="text-sm text-gray-500">{review.date}</p>
                   </div>
                 </div>
               </CardContent>
