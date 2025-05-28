@@ -20,13 +20,13 @@ export default function Hero() {
               formal wear and everyday essentials.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
-                Shop Now
-              </Button>
               <Button
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 bg-white/10 backdrop-blur-sm"
               >
+                Shop Now
+              </Button>
+              <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
                 Visit Our Store
               </Button>
             </div>
