@@ -15,7 +15,7 @@ export const products: Product[] = [
     description: "Comfortable and stylish outfit for everyday wear",
     price: "$45.00",
     category: "boys-clothing",
-    image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?ixlib=rb-4.0.3",
+    image: "/images/boysClothing.jpg",
     available: true
   },
   {
@@ -24,7 +24,7 @@ export const products: Product[] = [
     description: "Beautiful floral dress perfect for special occasions",
     price: "$65.00",
     category: "girls-clothing",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3",
+    image: "/images/girlsClothing.webp",
     available: true
   },
   {
@@ -33,7 +33,7 @@ export const products: Product[] = [
     description: "Soft and comfortable shoes for your little one",
     price: "$25.00",
     category: "footwear",
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3",
+    image: "/images/footwear.webp",
     available: true
   },
   {
@@ -42,7 +42,7 @@ export const products: Product[] = [
     description: "Elegant white dress for First Holy Communion",
     price: "$275.00",
     category: "communion",
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3",
+    image: "/images/communion.webp",
     available: true
   },
   {
@@ -51,7 +51,7 @@ export const products: Product[] = [
     description: "Traditional white baptism gown with intricate details",
     price: "$195.00",
     category: "baptism",
-    image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3",
+    image: "/images/baptism.webp",
     available: true
   },
   {
@@ -60,7 +60,7 @@ export const products: Product[] = [
     description: "Complete set of baby accessories including bibs and hats",
     price: "$35.00",
     category: "accessories",
-    image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3",
+    image: "/images/accessories.webp",
     available: true
   }
 ];
@@ -71,7 +71,7 @@ export const categories = [
     name: "Boys Clothing",
     slug: "boys-clothing",
     description: "Explore Our Lines of Infant, Baby, & Toddler Clothing for boys",
-    image: "https://images.unsplash.com/photo-1522771930-78848d9293e8?ixlib=rb-4.0.3",
+    image: "/images/boysClothing.jpg",
     buttonColor: "bg-light-blue"
   },
   {
@@ -79,7 +79,7 @@ export const categories = [
     name: "Girls Clothing",
     slug: "girls-clothing", 
     description: "Explore Our Lines of Infant, Baby, & Toddler Clothing for girls",
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3",
+    image: "/images/girlsClothing.webp",
     buttonColor: "bg-soft-pink"
   },
   {
@@ -87,7 +87,7 @@ export const categories = [
     name: "Footwear",
     slug: "footwear",
     description: "Explore Our girls and boys footwear for Infant, Baby, & Toddler",
-    image: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3",
+    image: "/images/footwear.webp",
     buttonColor: "bg-gray-800"
   },
   {
@@ -95,7 +95,7 @@ export const categories = [
     name: "Communion",
     slug: "communion",
     description: "Explore Our Communion Dresses for Infant, Baby, Toddler, and Girls.",
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3",
+    image: "/images/communion.webp",
     buttonColor: "bg-soft-pink"
   },
   {
@@ -103,7 +103,7 @@ export const categories = [
     name: "Accessories & Gifts",
     slug: "accessories",
     description: "Explore Our Variety of Infant, Baby, & Toddler Gifts for boys and girls",
-    image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3",
+    image: "/images/accessories.webp",
     buttonColor: "bg-warm-orange"
   },
   {
@@ -111,7 +111,7 @@ export const categories = [
     name: "Baptism",
     slug: "baptism",
     description: "Explore Our Christening Dresses for Infant, Baby, & Toddlers.",
-    image: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3",
+    image: "/images/baptism.webp",
     buttonColor: "bg-soft-pink"
   }
 ];
