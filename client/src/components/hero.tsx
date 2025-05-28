@@ -20,7 +20,7 @@ export default function Hero() {
               <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
                 Shop Now
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 bg-white/10 backdrop-blur-sm">
                 Visit Our Store
               </Button>
             </div>
