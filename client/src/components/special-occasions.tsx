@@ -42,6 +42,16 @@ export default function SpecialOccasions() {
                 alt="Children's formal shoes"
                 className="rounded-lg shadow-md"
               />
+              <img
+                src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
+                alt="Children's accessories"
+                className="rounded-lg shadow-md"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=300"
+                alt="Gift items"
+                className="rounded-lg shadow-md"
+              />
             </div>
           </div>
           <div className="order-1 md:order-2">
