@@ -31,7 +31,11 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative">
-            {/* Content area - you can add additional content here if needed */}
+            <img
+              src="/assets/images/bambiniShop.webp"
+              alt="Bambini's World Shop"
+              className="rounded-xl shadow-lg w-full h-auto"
+            />
           </div>
         </div>
       </div>
