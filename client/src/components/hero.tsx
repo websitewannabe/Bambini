@@ -34,7 +34,7 @@ export default function Hero() {
             <img
               src="/assets/images/bambiniShop.webp"
               alt="Bambini's World Shop"
-              className="rounded-xl shadow-lg w-full h-auto"
+              className="rounded-xl shadow-lg w-full h-auto border-4 border-light-blue"
             />
           </div>
         </div>
