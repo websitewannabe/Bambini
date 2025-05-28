@@ -21,7 +21,7 @@ export default function SpecialOccasions() {
           </div>
           <div>
             <img
-              src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400"
+              src="/images/dressImage.webp"
               alt="Special occasion dresses"
               className="rounded-xl shadow-lg w-full h-auto"
             />
