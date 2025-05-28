@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       className="py-16 bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: "url('/assets/images/hero.png')" }}
+      style={{ backgroundImage: "url('/images/hero.png')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       <div className="container mx-auto px-4 relative z-10">
@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-              src="/assets/images/bambiniShop.webp"
+              src="/images/bambiniShop.webp"
               alt="Bambini's World Shop"
               className="rounded-xl shadow-lg w-full h-auto border-4 border-light-blue"
             />
