@@ -5,35 +5,39 @@ const reviews = [
   {
     id: 1,
     author: "Alexandra",
-    content: "The selection and quality of baby clothing at this store is excellent!",
+    content:
+      "The selection and quality of baby clothing at this store is excellent!",
     rating: 5,
     date: "6/07/2022",
-    initial: "A"
+    initial: "A",
   },
   {
     id: 2,
     author: "Patricia",
-    content: "Beautiful store with exquisite clothing for children! The owners are extremely helpful and kind.",
+    content:
+      "Beautiful store with exquisite clothing for children! The owners are extremely helpful and kind.",
     rating: 5,
     date: "6/07/2016",
-    initial: "P"
+    initial: "P",
   },
   {
     id: 3,
     author: "Sal",
-    content: "Grace is terrific! I had to find a baby gift for a very good friend first granddaughter. I had little free time; I searched baby clothes near me, found Bambino's World. She was so kind and helpful.",
+    content:
+      "Grace is terrific! I had to find a baby gift for a very good friend first granddaughter. I had little free time; I searched baby clothes near me, found Bambino's World. She was so kind and helpful.",
     rating: 5,
     date: "4/10/2025",
-    initial: "S"
+    initial: "S",
   },
   {
     id: 4,
     author: "Karan",
-    content: "Great selection, always something different and unique, very helpful staff. Beautiful wrapping if you need it, very personal and welcoming. I've been shopping with them for years and will continue to.",
+    content:
+      "Great selection, always something different and unique, very helpful staff. Beautiful wrapping if you need it, very personal and welcoming. I've been shopping with them for years and will continue to.",
     rating: 5,
     date: "6/07/2022",
-    initial: "K"
-  }
+    initial: "K",
+  },
 ];
 
 export default function CustomerReviews() {
@@ -43,7 +47,7 @@ export default function CustomerReviews() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-4">
             <img
-              src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=80"
+              src="/assets/images/googleReviews.svg"
               alt="Google reviews"
               className="w-20 h-16 object-cover rounded mr-4"
             />
