@@ -49,7 +49,7 @@ export default function CustomerReviews() {
             <img
               src="/assets/images/googleReviews.svg"
               alt="Google reviews"
-              className="w-20 h-16 object-cover rounded mr-4"
+              className="w-16 h-16 object-contain mr-4"
             />
             <div>
               <h2 className="text-2xl font-bold text-navy">Our Reviews</h2>
