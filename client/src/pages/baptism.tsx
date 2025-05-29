@@ -84,7 +84,10 @@ export default function Baptism() {
                 heirloom that connects the memories of each child’s christening.
                 Explore our selection for both boys and girls.
               </p>
-              <Button className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3">
+              <Button 
+                className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3"
+                onClick={() => window.location.href = "/store"}
+              >
                 Shop Now
               </Button>
             </div>
