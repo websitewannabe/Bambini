@@ -43,6 +43,7 @@ const popularDresses = [
     price: "$240.00",
     image:
       "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    storeUrl: "/store#category=baptism&search=valentina"
   },
   {
     id: 2,
@@ -50,6 +51,7 @@ const popularDresses = [
     price: "$189.00",
     image:
       "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    storeUrl: "/store#category=baptism&search=teter"
   },
   {
     id: 3,
@@ -57,7 +59,8 @@ const popularDresses = [
     price: "$420.00",
     image:
       "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
-  },
+    storeUrl: "/store#category=baptism&search=angel"
+  }
 ];
 
 export default function Baptism() {
