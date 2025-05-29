@@ -56,14 +56,29 @@ export default function Communion() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-50 to-pink-50 py-16">
+      <section className="bg-white py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-navy mb-6">First Holy Communion</h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Make your child's First Holy Communion a memorable occasion with our beautiful collection 
-              of communion dresses, suits, and accessories.
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl font-bold text-soft-pink mb-6">
+                FIRST HOLY COMMUNION
+              </h1>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Make your child's First Holy Communion a memorable occasion with our beautiful collection 
+                of communion dresses, suits, and accessories. Each piece is carefully selected to honor 
+                this sacred milestone in your child's faith journey.
+              </p>
+              <Button className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3">
+                Shop Now
+              </Button>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=800"
+                alt="First Holy Communion dress"
+                className="rounded-xl shadow-lg w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
