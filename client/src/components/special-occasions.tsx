@@ -23,7 +23,7 @@ export default function SpecialOccasions() {
           </div>
           <div>
             <img
-              src="/images/dressImage.webp"
+              src="assets/images/dressImage.webp"
               alt="Special occasion dresses"
               className="rounded-xl shadow-lg w-full h-auto"
             />

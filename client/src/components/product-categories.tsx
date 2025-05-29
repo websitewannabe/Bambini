@@ -80,21 +80,22 @@ export default function ProductCategories() {
                   {category.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{category.description}</p>
-                <Button 
+                <Button
                   className={`${category.buttonClass} text-white w-full`}
                   onClick={() => {
                     if (category.name === "Boys Clothing") {
-                      window.location.href = "/store#category=boys";
+                      window.location.href = "/store#!/Boys/c/154631501";
                     } else if (category.name === "Girls Clothing") {
-                      window.location.href = "/store#category=girls";
+                      window.location.href = "/store#!/Girls/c/154613520";
                     } else if (category.name === "Footwear") {
-                      window.location.href = "/store#category=footwear";
+                      window.location.href = "/store#!/Footwear/c/154614264";
                     } else if (category.name === "Communion") {
-                      window.location.href = "/communion";
+                      window.location.href = "/store#!/Communion/c/154613522";
                     } else if (category.name === "Accessories & Gifts") {
-                      window.location.href = "/store#category=accessories";
+                      window.location.href =
+                        "store#!/Accessories-and-Gifts/c/154623510";
                     } else if (category.name === "Baptism") {
-                      window.location.href = "/baptism";
+                      window.location.href = "/store#!/Christening/c/154613523";
                     }
                   }}
                 >
@@ -123,7 +124,7 @@ export default function ProductCategories() {
                   {category.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{category.description}</p>
-                <Button 
+                <Button
                   className={`${category.buttonClass} text-white w-full`}
                   onClick={() => {
                     if (category.name === "Boys Clothing") {
