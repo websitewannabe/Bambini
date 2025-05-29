@@ -22,7 +22,10 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link href="/" className="text-gray-700 hover:text-navy transition-colors font-medium">
-              Shop
+              Home
+            </Link>
+            <Link href="/store" className="text-gray-700 hover:text-navy transition-colors font-medium">
+              Store
             </Link>
             <Link href="/baptism" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Baptism

@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import Home from "@/pages/home";
 import Baptism from "@/pages/baptism";
 import Communion from "@/pages/communion";
+import Store from "@/pages/store";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/baptism" component={Baptism} />
           <Route path="/communion" component={Communion} />
+          <Route path="/store" component={Store} />
           <Route component={NotFound} />
         </Switch>
       </main>
