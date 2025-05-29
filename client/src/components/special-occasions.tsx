@@ -71,7 +71,10 @@ export default function SpecialOccasions() {
               ever-changing variety of must-have gifts and accessories for any
               child.
             </p>
-            <Button className="bg-warm-orange hover:bg-orange-600 text-white px-8 py-3">
+            <Button 
+              className="bg-warm-orange hover:bg-orange-600 text-white px-8 py-3"
+              onClick={() => window.location.href = "/store"}
+            >
               Shop Now
             </Button>
           </div>
