@@ -41,24 +41,21 @@ const popularDresses = [
     id: 1,
     name: "Valentina",
     price: "$240.00",
-    image:
-      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    image: "/images/baptism.webp",
     storeUrl: "/store#category=baptism&search=valentina"
   },
   {
     id: 2,
     name: "Teter Warm",
     price: "$189.00",
-    image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    image: "/images/teterwarm.webp",
     storeUrl: "/store#category=baptism&search=teter"
   },
   {
     id: 3,
     name: "Angel",
     price: "$420.00",
-    image:
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    image: "/images/baptismDress.jpg",
     storeUrl: "/store#category=baptism&search=angel"
   }
 ];
@@ -139,7 +136,8 @@ export default function Baptism() {
             {popularDresses.map((dress) => (
               <Card
                 key={dress.id}
-                className="overflow-hidden hover:shadow-lg transition-shadow"
+                className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                onClick={() => window.location.href = dress.storeUrl}
               >
                 <div className="relative">
                   <img
