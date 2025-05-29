@@ -46,32 +46,25 @@ const baptismProducts = [
 const popularDresses = [
   {
     id: 1,
-    name: "Valentina",
-    price: "$240.00",
-    image: "/images/baptism.webp",
-    storeUrl: "/store#category=baptism&search=valentina"
+    name: "Vanina",
+    price: "$390.00",
+    image: "/assets/images/vanina.jpg",
+    storeUrl: "/store#!/Vanina/p/580065611/",
   },
   {
     id: 2,
-    name: "Teter Warm",
-    price: "$189.00",
-    image: "/images/teterwarm.webp",
-    storeUrl: "/store#category=baptism&search=teter"
+    name: "Magdalena",
+    price: "$390.00",
+    image: "assets/images/magdalena.jpg",
+    storeUrl: "store#!/Magdalena/p/580049386",
   },
   {
     id: 3,
-    name: "Angel",
-    price: "$420.00",
-    image: "/images/baptismDress.jpg",
-    storeUrl: "/store#category=baptism&search=angel"
+    name: "Blue Willie",
+    price: "$365.00",
+    image: "assets/images/blue.jpg",
+    storeUrl: "/store#!/Blue-Willie/p/580096272",
   },
-  {
-    id: 4,
-    name: "Grace",
-    price: "$295.00",
-    image: "/images/christi.webp",
-    storeUrl: "/store#category=baptism&search=grace"
-  }
 ];
 
 export default function Baptism() {
@@ -155,10 +148,13 @@ export default function Baptism() {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {popularDresses.map((dress) => (
-                <CarouselItem key={dress.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem
+                  key={dress.id}
+                  className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
+                >
                   <Card
                     className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
-                    onClick={() => window.location.href = dress.storeUrl}
+                    onClick={() => (window.location.href = dress.storeUrl)}
                   >
                     <div className="relative">
                       <img
