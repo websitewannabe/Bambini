@@ -38,35 +38,17 @@ const communionProducts = [
 const featuredDresses = [
   {
     id: 1,
-    name: "Grace",
-    price: "$320.00",
-    image:
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
-    storeUrl: "/store#category=communion&search=grace"
+    name: "121307 Joan Calabrese",
+    price: "$329.00",
+    image: "assets/images/121307.jpg",
+    storeUrl: "/store#!/121307-Joan-Calabrese/p/585758401",
   },
   {
     id: 2,
-    name: "Angelica",
-    price: "$275.00",
-    image:
-      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
-    storeUrl: "/store#category=communion&search=angelica"
-  },
-  {
-    id: 3,
-    name: "Isabella",
-    price: "$295.00",
-    image:
-      "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
-    storeUrl: "/store#category=communion&search=isabella"
-  },
-  {
-    id: 4,
-    name: "Victoria",
+    name: "Maci's Design 121306",
     price: "$350.00",
-    image:
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
-    storeUrl: "/store#category=communion&search=victoria"
+    image: "assets/images/121306.jpg",
+    storeUrl: "/store#!/Macis-design-121306/p/583923812",
   },
 ];
 
@@ -152,10 +134,13 @@ export default function Communion() {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {featuredDresses.map((dress) => (
-                <CarouselItem key={dress.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                <CarouselItem
+                  key={dress.id}
+                  className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
+                >
                   <Card
                     className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
-                    onClick={() => window.location.href = dress.storeUrl}
+                    onClick={() => (window.location.href = dress.storeUrl)}
                   >
                     <div className="relative">
                       <img
