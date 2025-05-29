@@ -80,7 +80,24 @@ export default function ProductCategories() {
                   {category.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{category.description}</p>
-                <Button className={`${category.buttonClass} text-white w-full`}>
+                <Button 
+                  className={`${category.buttonClass} text-white w-full`}
+                  onClick={() => {
+                    if (category.name === "Boys Clothing") {
+                      window.location.href = "/store#category=boys";
+                    } else if (category.name === "Girls Clothing") {
+                      window.location.href = "/store#category=girls";
+                    } else if (category.name === "Footwear") {
+                      window.location.href = "/store#category=footwear";
+                    } else if (category.name === "Communion") {
+                      window.location.href = "/communion";
+                    } else if (category.name === "Accessories & Gifts") {
+                      window.location.href = "/store#category=accessories";
+                    } else if (category.name === "Baptism") {
+                      window.location.href = "/baptism";
+                    }
+                  }}
+                >
                   Shop Now
                 </Button>
               </CardContent>
@@ -106,7 +123,24 @@ export default function ProductCategories() {
                   {category.name}
                 </h3>
                 <p className="text-gray-600 mb-4">{category.description}</p>
-                <Button className={`${category.buttonClass} text-white w-full`}>
+                <Button 
+                  className={`${category.buttonClass} text-white w-full`}
+                  onClick={() => {
+                    if (category.name === "Boys Clothing") {
+                      window.location.href = "/store#category=boys";
+                    } else if (category.name === "Girls Clothing") {
+                      window.location.href = "/store#category=girls";
+                    } else if (category.name === "Footwear") {
+                      window.location.href = "/store#category=footwear";
+                    } else if (category.name === "Communion") {
+                      window.location.href = "/communion";
+                    } else if (category.name === "Accessories & Gifts") {
+                      window.location.href = "/store#category=accessories";
+                    } else if (category.name === "Baptism") {
+                      window.location.href = "/baptism";
+                    }
+                  }}
+                >
                   Shop Now
                 </Button>
               </CardContent>
