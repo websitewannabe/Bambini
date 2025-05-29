@@ -17,9 +17,9 @@ export default function SpecialOccasions() {
               and most beautiful designs to make your little one feel special on
               their big day.
             </p>
-            <Button 
+            <Button
               className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3"
-              onClick={() => window.location.href = "/store"}
+              onClick={() => (window.location.href = "/store")}
             >
               Shop Now
             </Button>
@@ -74,9 +74,9 @@ export default function SpecialOccasions() {
               ever-changing variety of must-have gifts and accessories for any
               child.
             </p>
-            <Button 
+            <Button
               className="bg-warm-orange hover:bg-orange-600 text-white px-8 py-3"
-              onClick={() => window.location.href = "/store"}
+              onClick={() => (window.location.href = "/store")}
             >
               Shop Now
             </Button>
@@ -97,11 +97,13 @@ export default function SpecialOccasions() {
               look his best. Search our store for all our boy merchandise by
               clicking the button below
             </p>
-            <Button 
+            <Button
               className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3"
-              onClick={() => window.location.href = "/store#!/Boys/c/154631501"}
+              onClick={() =>
+                (window.location.href = "/store#!/Boys/c/154631501")
+              }
             >
-              Shop Boys
+              Shop Now
             </Button>
           </div>
           <div>
