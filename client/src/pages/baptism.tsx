@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const baptismProducts = [
   {
@@ -57,6 +64,13 @@ const popularDresses = [
     price: "$420.00",
     image: "/images/baptismDress.jpg",
     storeUrl: "/store#category=baptism&search=angel"
+  },
+  {
+    id: 4,
+    name: "Grace",
+    price: "$295.00",
+    image: "/images/christi.webp",
+    storeUrl: "/store#category=baptism&search=grace"
   }
 ];
 
@@ -132,31 +146,42 @@ export default function Baptism() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {popularDresses.map((dress) => (
-              <Card
-                key={dress.id}
-                className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
-                onClick={() => window.location.href = dress.storeUrl}
-              >
-                <div className="relative">
-                  <img
-                    src={dress.image}
-                    alt={dress.name}
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-navy mb-2">
-                    {dress.name}
-                  </h3>
-                  <p className="text-lg font-bold text-gray-900">
-                    {dress.price}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {popularDresses.map((dress) => (
+                <CarouselItem key={dress.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Card
+                    className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                    onClick={() => window.location.href = dress.storeUrl}
+                  >
+                    <div className="relative">
+                      <img
+                        src={dress.image}
+                        alt={dress.name}
+                        className="w-full h-80 object-cover"
+                      />
+                    </div>
+                    <CardContent className="p-6 text-center">
+                      <h3 className="text-xl font-semibold text-navy mb-2">
+                        {dress.name}
+                      </h3>
+                      <p className="text-lg font-bold text-gray-900">
+                        {dress.price}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
     </div>
