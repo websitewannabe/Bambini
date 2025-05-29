@@ -43,7 +43,11 @@ export default function Header() {
             <Button variant="ghost" size="icon">
               <User className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button 
+              variant="ghost" 
+              size="icon"
+              onClick={() => window.location.href = "/search"}
+            >
               <Search className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden">
