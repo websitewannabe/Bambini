@@ -22,10 +22,14 @@ export default function Hero() {
               <Button
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 bg-white/10 backdrop-blur-sm"
+                onClick={() => window.location.href = "/store"}
               >
                 Shop Now
               </Button>
-              <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
+              <Button 
+                className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3"
+                onClick={() => window.open("https://www.google.com/maps/dir/?api=1&destination=1589+N+Main+Street+Warrington%2C+PA+18976", "_blank")}
+              >
                 Visit Our Store
               </Button>
             </div>
