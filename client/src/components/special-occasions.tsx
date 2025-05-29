@@ -17,7 +17,10 @@ export default function SpecialOccasions() {
               and most beautiful designs to make your little one feel special on
               their big day.
             </p>
-            <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
+            <Button 
+              className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3"
+              onClick={() => window.location.href = "/store"}
+            >
               Shop Now
             </Button>
           </div>
@@ -66,8 +69,8 @@ export default function SpecialOccasions() {
               <br />& Gifts
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              What children’s boutique would be complete without those perfect
-              gifts for your loved ones? Bambini’s World carries an
+              What children's boutique would be complete without those perfect
+              gifts for your loved ones? Bambini's World carries an
               ever-changing variety of must-have gifts and accessories for any
               child.
             </p>
@@ -89,12 +92,15 @@ export default function SpecialOccasions() {
               Will Look Great
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Girls can’t have all the fun! We have sleepwear, outfits,
+              Girls can't have all the fun! We have sleepwear, outfits,
               outerwear, toys, gifts and so much more for your little boy to
               look his best. Search our store for all our boy merchandise by
               clicking the button below
             </p>
-            <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
+            <Button 
+              className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3"
+              onClick={() => window.location.href = "/store#!/Boys/c/154631501"}
+            >
               Shop Boys
             </Button>
           </div>
