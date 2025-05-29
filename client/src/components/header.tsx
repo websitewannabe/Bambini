@@ -68,10 +68,11 @@ export default function Header() {
           </nav>
 
           {/* Icons */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2">
             <Button 
               variant="ghost" 
               size="icon"
+              className="h-10 w-10"
               onClick={() => window.location.href = "/store#!/account"}
             >
               <User className="h-5 w-5" />
@@ -79,12 +80,13 @@ export default function Header() {
             <Button 
               variant="ghost" 
               size="icon"
+              className="h-10 w-10"
               onClick={() => window.location.href = "/search"}
             >
               <Search className="h-5 w-5" />
             </Button>
-            <div className="ec-cart-widget"></div>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <div className="ec-cart-widget h-10 w-10 flex items-center justify-center"></div>
+            <Button variant="ghost" size="icon" className="h-10 w-10 md:hidden">
               <Menu className="h-5 w-5" />
             </Button>
           </div>
