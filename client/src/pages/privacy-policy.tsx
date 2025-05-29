@@ -1,7 +1,4 @@
-` tags, ensuring that all necessary changes are included and the code is complete and correct.
 
-```
-<replit_final_file>
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gray-50">
