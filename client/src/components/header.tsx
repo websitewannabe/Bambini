@@ -1,8 +1,37 @@
 import { Link } from "wouter";
 import { User, Search, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
 
 export default function Header() {
+  useEffect(() => {
+    // Check if Ecwid script is already loaded
+    const existingScript = document.querySelector('script[src*="app.business.shop/script.js"]');
+    
+    if (!existingScript) {
+      // Load the business.shop script
+      const script = document.createElement('script');
+      script.src = 'https://app.business.shop/script.js?90737576&data_platform=code&data_date=2025-05-29';
+      script.charset = 'utf-8';
+      script.setAttribute('data-cfasync', 'false');
+      script.type = 'text/javascript';
+      
+      script.onload = () => {
+        // Initialize Ecwid after script loads
+        if (window.Ecwid) {
+          window.Ecwid.init();
+        }
+      };
+
+      document.head.appendChild(script);
+    } else {
+      // Script already exists, just initialize
+      if (window.Ecwid) {
+        window.Ecwid.init();
+      }
+    }
+  }, []);
+
   return (
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4">
@@ -50,6 +79,7 @@ export default function Header() {
             >
               <Search className="h-5 w-5" />
             </Button>
+            <div className="ec-cart-widget"></div>
             <Button variant="ghost" size="icon" className="md:hidden">
               <Menu className="h-5 w-5" />
             </Button>
@@ -58,4 +88,13 @@ export default function Header() {
       </div>
     </header>
   );
+}
+
+// Extend Window interface for TypeScript
+declare global {
+  interface Window {
+    Ecwid: {
+      init: () => void;
+    };
+  }
 }
