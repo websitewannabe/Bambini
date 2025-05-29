@@ -68,7 +68,10 @@ export default function Communion() {
                 commitment to their faith. Explore our collection of dresses,
                 suits and accessories.
               </p>
-              <Button className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3">
+              <Button 
+                className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3"
+                onClick={() => window.location.href = "/store"}
+              >
                 Shop Now
               </Button>
             </div>
