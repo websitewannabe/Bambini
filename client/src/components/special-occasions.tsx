@@ -18,7 +18,7 @@ export default function SpecialOccasions() {
               their big day.
             </p>
             <Button className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3">
-              View Collection
+              Shop Now
             </Button>
           </div>
           <div>
