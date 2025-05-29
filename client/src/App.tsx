@@ -9,6 +9,7 @@ import Home from "@/pages/home";
 import Baptism from "@/pages/baptism";
 import Communion from "@/pages/communion";
 import Store from "@/pages/store";
+import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -21,6 +22,7 @@ function Router() {
           <Route path="/baptism" component={Baptism} />
           <Route path="/communion" component={Communion} />
           <Route path="/store" component={Store} />
+          <Route path="/contact" component={Contact} />
           <Route component={NotFound} />
         </Switch>
       </main>

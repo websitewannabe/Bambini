@@ -33,6 +33,9 @@ export default function Header() {
             <Link href="/communion" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Communion
             </Link>
+            <Link href="/contact" className="text-gray-700 hover:text-navy transition-colors font-medium">
+              Contact
+            </Link>
           </nav>
 
           {/* Icons */}
