@@ -172,6 +172,28 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center text-sm">
+          <div className="flex flex-wrap justify-center gap-4 mb-4">
+            <a
+              href="/privacy-policy"
+              className="hover:text-blue-300 transition-colors"
+            >
+              Privacy Policy
+            </a>
+            <span className="text-gray-600">|</span>
+            <a
+              href="/terms-conditions"
+              className="hover:text-blue-300 transition-colors"
+            >
+              Terms & Conditions
+            </a>
+            <span className="text-gray-600">|</span>
+            <a
+              href="/refund-policy"
+              className="hover:text-blue-300 transition-colors"
+            >
+              Refund Policy
+            </a>
+          </div>
           <p>
             &copy; 2025 Bambini's World. All rights reserved. Website designed
             with care for families.

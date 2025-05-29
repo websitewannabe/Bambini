@@ -12,6 +12,9 @@ import Store from "@/pages/store";
 import Search from "@/pages/search";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
+import PrivacyPolicy from "@/pages/privacy-policy";
+import TermsConditions from "@/pages/terms-conditions";
+import RefundPolicy from "@/pages/refund-policy";
 
 function Router() {
   return (
@@ -25,6 +28,9 @@ function Router() {
           <Route path="/store" component={Store} />
           <Route path="/search" component={Search} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/terms-conditions" component={TermsConditions} />
+          <Route path="/refund-policy" component={RefundPolicy} />
           <Route component={NotFound} />
         </Switch>
       </main>
