@@ -144,7 +144,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-300 transition-colors">
+                <a
+                  href="/store#!/account"
+                  className="hover:text-blue-300 transition-colors"
+                >
                   My Account
                 </a>
               </li>
@@ -158,7 +161,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="store"
+                  href="/search"
                   className="hover:text-blue-300 transition-colors"
                 >
                   Product Search
