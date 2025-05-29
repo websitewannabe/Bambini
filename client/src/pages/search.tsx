@@ -3,23 +3,45 @@ import { useEffect } from "react";
 
 export default function Search() {
   useEffect(() => {
+    // Check if script is already loaded
+    const existingScript = document.querySelector('script[src*="app.business.shop/script.js"]');
+    
+    if (existingScript) {
+      // Script already exists, just initialize
+      if (window.xSearch) {
+        window.xSearch("id=my-search-90737576");
+      }
+      return;
+    }
+
     // Load the store script
     const script = document.createElement('script');
     script.src = 'https://app.business.shop/script.js?90737576&data_platform=code&data_date=2025-05-29';
     script.charset = 'utf-8';
     script.setAttribute('data-cfasync', 'false');
-    document.head.appendChild(script);
-
+    script.type = 'text/javascript';
+    
     // Initialize the search after script loads
     script.onload = () => {
-      if (window.xSearch) {
-        window.xSearch("id=my-search-90737576");
-      }
+      // Add a small delay to ensure the script is fully loaded
+      setTimeout(() => {
+        if (window.xSearch) {
+          window.xSearch("id=my-search-90737576");
+        }
+      }, 100);
     };
+
+    script.onerror = () => {
+      console.error('Failed to load business.shop search script');
+    };
+
+    document.head.appendChild(script);
 
     return () => {
       // Cleanup script on component unmount
-      document.head.removeChild(script);
+      if (script && script.parentNode) {
+        script.parentNode.removeChild(script);
+      }
     };
   }, []);
 
