@@ -1,5 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const communionProducts = [
   {
@@ -35,6 +42,7 @@ const featuredDresses = [
     price: "$320.00",
     image:
       "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    storeUrl: "/store#category=communion&search=grace"
   },
   {
     id: 2,
@@ -42,6 +50,7 @@ const featuredDresses = [
     price: "$275.00",
     image:
       "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    storeUrl: "/store#category=communion&search=angelica"
   },
   {
     id: 3,
@@ -49,6 +58,7 @@ const featuredDresses = [
     price: "$295.00",
     image:
       "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    storeUrl: "/store#category=communion&search=isabella"
   },
   {
     id: 4,
@@ -56,6 +66,7 @@ const featuredDresses = [
     price: "$350.00",
     image:
       "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&h=400",
+    storeUrl: "/store#category=communion&search=victoria"
   },
 ];
 
@@ -132,30 +143,42 @@ export default function Communion() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredDresses.map((dress) => (
-              <Card
-                key={dress.id}
-                className="overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="relative">
-                  <img
-                    src={dress.image}
-                    alt={dress.name}
-                    className="w-full h-80 object-cover"
-                  />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-navy mb-2">
-                    {dress.name}
-                  </h3>
-                  <p className="text-lg font-bold text-gray-900">
-                    {dress.price}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {featuredDresses.map((dress) => (
+                <CarouselItem key={dress.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Card
+                    className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer"
+                    onClick={() => window.location.href = dress.storeUrl}
+                  >
+                    <div className="relative">
+                      <img
+                        src={dress.image}
+                        alt={dress.name}
+                        className="w-full h-80 object-cover"
+                      />
+                    </div>
+                    <CardContent className="p-6 text-center">
+                      <h3 className="text-xl font-semibold text-navy mb-2">
+                        {dress.name}
+                      </h3>
+                      <p className="text-lg font-bold text-gray-900">
+                        {dress.price}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
