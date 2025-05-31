@@ -6,7 +6,7 @@ export default function Hero() {
       className="py-16 bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: "url('/images/hero.png')" }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">
