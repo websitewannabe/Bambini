@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { Router, Route, Switch } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import Header from "./components/header";
@@ -25,20 +26,20 @@ function App() {
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/baptism" element={<Baptism />} />
-              <Route path="/communion" element={<Communion />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/blog/:slug" element={<BlogPost />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/terms-conditions" element={<TermsConditions />} />
-              <Route path="/refund-policy" element={<RefundPolicy />} />
-              <Route path="/store" element={<Store />} />
-              <Route path="/search" element={<Search />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Switch>
+              <Route path="/" component={Home} />
+              <Route path="/baptism" component={Baptism} />
+              <Route path="/communion" component={Communion} />
+              <Route path="/blog" component={Blog} />
+              <Route path="/blog/:slug" component={BlogPost} />
+              <Route path="/privacy-policy" component={PrivacyPolicy} />
+              <Route path="/terms-conditions" component={TermsConditions} />
+              <Route path="/refund-policy" component={RefundPolicy} />
+              <Route path="/store" component={Store} />
+              <Route path="/search" component={Search} />
+              <Route path="/contact" component={Contact} />
+              <Route component={NotFound} />
+            </Switch>
           </main>
           <Footer />
         </div>
