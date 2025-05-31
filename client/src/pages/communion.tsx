@@ -22,7 +22,7 @@ const communionProducts = [
     name: "Joan Calabrese",
     description:
       "In August of 2021 Macis Designs began a partnership with the Calabrese family to continue producing the Joan Calabrese line under the name Joan Calabrese for Macis Design. For special orders or sizing guides stop in our store or give us a call.",
-    image: "assets/images/calabrese.webp",
+    image: "/images/calabrese.webp",
     buttonColor: "bg-light-blue",
   },
   {
@@ -30,7 +30,7 @@ const communionProducts = [
     name: "Teter Warm",
     description:
       "Founded in 2023 in Richmond Hill, Teter Warm understands that clothing is more than just a necessity; it is a form of self-expression. Every item in our store is also available online and vice versa.  If you see the item within our online store, you can come see it in the store as well. Special orders available upon request and availability.",
-    image: "assets/images/teter2.webp",
+    image: "/images/teter2.webp",
     buttonColor: "bg-navy",
   },
 ];
