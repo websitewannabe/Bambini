@@ -1,9 +1,15 @@
 import { Link } from "wouter";
-import { User, Search, Menu } from "lucide-react";
+import { User, Search, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   useEffect(() => {
     // Check if Ecwid script is already loaded
     const existingScript = document.querySelector('script[src*="app.business.shop/script.js"]');
@@ -48,7 +54,7 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Navigation */}
+          {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link href="/" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Home
@@ -89,11 +95,66 @@ export default function Header() {
               <Search className="h-5 w-5" />
             </Button>
             <div className="ec-cart-widget h-10 w-10 flex items-center justify-center"></div>
-            <Button variant="ghost" size="icon" className="h-10 w-10 md:hidden">
-              <Menu className="h-5 w-5" />
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="h-10 w-10 md:hidden"
+              onClick={toggleMobileMenu}
+            >
+              {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200">
+            <nav className="px-4 py-4 space-y-4">
+              <Link 
+                href="/" 
+                className="block text-gray-700 hover:text-navy transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link 
+                href="/store" 
+                className="block text-gray-700 hover:text-navy transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Store
+              </Link>
+              <Link 
+                href="/baptism" 
+                className="block text-gray-700 hover:text-navy transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Baptism
+              </Link>
+              <Link 
+                href="/communion" 
+                className="block text-gray-700 hover:text-navy transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Communion
+              </Link>
+              <Link 
+                href="/blog" 
+                className="block text-gray-700 hover:text-navy transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link 
+                href="/contact" 
+                className="block text-gray-700 hover:text-navy transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
