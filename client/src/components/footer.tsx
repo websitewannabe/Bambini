@@ -161,7 +161,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/search"
+                  href="/store"
                   className="hover:text-blue-300 transition-colors"
                 >
                   Product Search
