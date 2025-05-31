@@ -7,7 +7,7 @@ export default function Header() {
   useEffect(() => {
     // Check if Ecwid script is already loaded
     const existingScript = document.querySelector('script[src*="app.business.shop/script.js"]');
-    
+
     if (!existingScript) {
       // Load the business.shop script
       const script = document.createElement('script');
@@ -15,7 +15,7 @@ export default function Header() {
       script.charset = 'utf-8';
       script.setAttribute('data-cfasync', 'false');
       script.type = 'text/javascript';
-      
+
       script.onload = () => {
         // Initialize Ecwid after script loads
         if (window.Ecwid) {
@@ -61,6 +61,9 @@ export default function Header() {
             </Link>
             <Link href="/communion" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Communion
+            </Link>
+            <Link href="/blog" className="text-gray-700 hover:text-navy transition-colors font-medium">
+              Blog
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Contact
