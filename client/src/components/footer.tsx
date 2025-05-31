@@ -181,6 +181,13 @@ export default function Footer() {
             </a>
             <span className="text-gray-600">|</span>
             <a
+              href="/sitemap.xml"
+              className="hover:text-blue-300 transition-colors"
+            >
+              Sitemap
+            </a>
+            <span className="text-gray-600">|</span>
+            <a
               href="/terms-conditions"
               className="hover:text-blue-300 transition-colors"
             >
