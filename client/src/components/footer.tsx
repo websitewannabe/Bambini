@@ -139,11 +139,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:text-blue-300 transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
                 <a
                   href="/store#!/account"
                   className="hover:text-blue-300 transition-colors"
