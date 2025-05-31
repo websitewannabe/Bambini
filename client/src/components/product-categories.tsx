@@ -68,11 +68,11 @@ export default function ProductCategories() {
               key={category.id}
               className="overflow-hidden group hover:shadow-xl transition-shadow"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden aspect-[4/3]">
                 <img
                   src={category.image}
                   alt={category.name}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardContent className="p-6">
@@ -112,11 +112,11 @@ export default function ProductCategories() {
               key={category.id}
               className="overflow-hidden group hover:shadow-xl transition-shadow"
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden aspect-[4/3]">
                 <img
                   src={category.image}
                   alt={category.name}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <CardContent className="p-6">
