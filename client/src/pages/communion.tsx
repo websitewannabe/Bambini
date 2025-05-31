@@ -14,7 +14,7 @@ const communionProducts = [
     name: "Macis Design",
     description:
       "Macis Design is committed to designing and manufacturing gowns of high quality, unique design and lots of detail. The company’s private owned factory allows them to ensure one of a kind design. For special orders or sizing guides stop in our store or give us a call.",
-    image: "assets/images/macis.webp",
+    image: "/images/macis.webp",
     buttonColor: "bg-soft-pink",
   },
   {
