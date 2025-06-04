@@ -37,7 +37,7 @@ function App() {
               <Route path="/refund-policy" component={RefundPolicy} />
               <Route path="/store" component={Store} />
               <Route path="/search" component={Search} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/contact-us" component={Contact} />
               <Route component={NotFound} />
             </Switch>
           </main>

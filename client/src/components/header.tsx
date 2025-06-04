@@ -68,7 +68,7 @@ export default function Header() {
             <Link href="/communion" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Communion
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-navy transition-colors font-medium">
+            <Link href="/contact-us" className="text-gray-700 hover:text-navy transition-colors font-medium">
               Contact
             </Link>
           </nav>
@@ -136,7 +136,7 @@ export default function Header() {
                 Communion
               </Link>
               <Link 
-                href="/contact" 
+                href="/contact-us" 
                 className="block text-gray-700 hover:text-navy transition-colors font-medium"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
