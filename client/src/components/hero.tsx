@@ -6,6 +6,8 @@ export default function Hero() {
       className="py-16 bg-cover bg-center bg-no-repeat relative"
       style={{ backgroundImage: "url('/images/hero.png')" }}
     >
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
