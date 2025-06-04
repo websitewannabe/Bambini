@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-              src="/images/bambiniShop.webp"
+              src="/assets/images/bambiniShop.webp"
               alt="Bambini's World Shop"
               className="rounded-xl shadow-lg w-full h-auto border-4 border-light-blue"
             />

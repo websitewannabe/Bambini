@@ -22,7 +22,7 @@ const baptismProducts = [
     name: "Lito",
     description:
       "Lito Children’s Wear began in 1973 as a children’s special occasion apparel boutique based in Long Beach, California. We have a special selection available for special order in store, stop in or call us for more information.",
-    image: "/images/lito.webp",
+    image: "assets/images/lito.webp",
     buttonColor: "bg-soft-pink",
   },
   {
