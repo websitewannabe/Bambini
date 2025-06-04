@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,9 +10,59 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>Contact Us - Bambini's World</title>
-        <meta name="description" content="Get in touch with Bambini's World. Visit our store in Warrington, PA or contact us for questions about children's apparel and special occasion dresses." />
-        <meta name="keywords" content="contact, Bambini's World, Warrington PA, children's boutique, store hours, directions" />
+        <link rel="canonical" href="https://bambinisworld.com/contact" />
+        <title>Contact Bambini's World | Visit or Send Us a Message</title>
+        <meta
+          name="description"
+          content="Have a question or need assistance? Contact Bambini's World in Warrington, PA via phone, email, or our contact form. We’re here to help."
+        />
+        <meta
+          name="keywords"
+          content="contact Bambini's World, baby boutique contact, Warrington PA store, customer service, kids clothing store contact"
+        />
+
+        {/* Open Graph metadata */}
+        <meta
+          property="og:title"
+          content="Contact Bambini's World | Visit or Send Us a Message"
+        />
+        <meta
+          property="og:description"
+          content="Reach out to Bambini's World for help with your order or visit us in-store in Warrington, PA."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bambinisworld.com/contact" />
+        <meta
+          property="og:image"
+          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+        />
+
+        {/* Structured Data (JSON-LD) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Contact Bambini's World",
+            url: "https://bambinisworld.com/contact",
+            description:
+              "Contact Bambini's World for customer support, store hours, or general inquiries. Located in Warrington, PA, we offer multiple ways to get in touch.",
+            contactOption: [
+              {
+                "@type": "ContactPoint",
+                contactType: "customer support",
+                telephone: "+1-215-230-4572",
+                email: "bambinisworld.info@gmail.com",
+                availableLanguage: ["English"],
+              },
+            ],
+            publisher: {
+              "@type": "Organization",
+              name: "Bambini's World",
+              url: "https://bambinisworld.com",
+              logo: "https://bambinisworld.netlify.app/images/bambiniShop.webp",
+            },
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="bg-navy text-white py-16">
@@ -21,7 +70,8 @@ export default function Contact() {
           <div className="text-center">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
             <p className="text-lg text-gray-300">
-              We'd love to hear from you! Get in touch with any questions or visit our store.
+              We'd love to hear from you! Get in touch with any questions or
+              visit our store.
             </p>
           </div>
         </div>
@@ -33,17 +83,22 @@ export default function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-2xl font-bold text-navy mb-8">Get In Touch</h2>
-              
+              <h2 className="text-2xl font-bold text-navy mb-8">
+                Get In Touch
+              </h2>
+
               <div className="space-y-6 mb-8">
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <MapPin className="h-6 w-6 text-light-blue mt-1" />
                       <div>
-                        <h3 className="font-semibold text-navy mb-2">Visit Our Store</h3>
+                        <h3 className="font-semibold text-navy mb-2">
+                          Visit Our Store
+                        </h3>
                         <p className="text-gray-600">
-                          1589 N Main Street<br />
+                          1589 N Main Street
+                          <br />
                           Warrington, PA 18976
                         </p>
                       </div>
@@ -56,7 +111,9 @@ export default function Contact() {
                     <div className="flex items-start space-x-4">
                       <Phone className="h-6 w-6 text-light-blue mt-1" />
                       <div>
-                        <h3 className="font-semibold text-navy mb-2">Call Us</h3>
+                        <h3 className="font-semibold text-navy mb-2">
+                          Call Us
+                        </h3>
                         <p className="text-gray-600">(215) 230-4572</p>
                       </div>
                     </div>
@@ -68,8 +125,12 @@ export default function Contact() {
                     <div className="flex items-start space-x-4">
                       <Mail className="h-6 w-6 text-light-blue mt-1" />
                       <div>
-                        <h3 className="font-semibold text-navy mb-2">Email Us</h3>
-                        <p className="text-gray-600">bambinisworld.info@gmail.com</p>
+                        <h3 className="font-semibold text-navy mb-2">
+                          Email Us
+                        </h3>
+                        <p className="text-gray-600">
+                          bambinisworld.info@gmail.com
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -80,7 +141,9 @@ export default function Contact() {
                     <div className="flex items-start space-x-4">
                       <Clock className="h-6 w-6 text-light-blue mt-1" />
                       <div>
-                        <h3 className="font-semibold text-navy mb-2">Store Hours</h3>
+                        <h3 className="font-semibold text-navy mb-2">
+                          Store Hours
+                        </h3>
                         <div className="text-gray-600 space-y-1">
                           <p>Monday - Saturday: 11:00 AM – 6:00 PM</p>
                           <p>Sunday: 12:00 PM – 4:00 PM</p>
@@ -91,9 +154,14 @@ export default function Contact() {
                 </Card>
               </div>
 
-              <Button 
+              <Button
                 className="bg-light-blue hover:bg-blue-600 text-white px-8 py-3"
-                onClick={() => window.open("https://www.google.com/maps/dir/?api=1&destination=1589+N+Main+Street+Warrington%2C+PA+18976", "_blank")}
+                onClick={() =>
+                  window.open(
+                    "https://www.google.com/maps/dir/?api=1&destination=1589+N+Main+Street+Warrington%2C+PA+18976",
+                    "_blank",
+                  )
+                }
               >
                 Get Directions
               </Button>
@@ -103,40 +171,44 @@ export default function Contact() {
             <div>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-navy">Send Us a Message</CardTitle>
+                  <CardTitle className="text-2xl text-navy">
+                    Send Us a Message
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form 
-                    name="contact" 
-                    method="POST" 
-                    data-netlify="true" 
+                  <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
                     netlify-honeypot="bot-field"
                     className="space-y-6"
                   >
                     {/* Hidden fields for Netlify */}
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="hidden">
-                      <Label htmlFor="bot-field">Don't fill this out if you're human:</Label>
+                      <Label htmlFor="bot-field">
+                        Don't fill this out if you're human:
+                      </Label>
                       <Input name="bot-field" />
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <Label htmlFor="firstName">First Name *</Label>
-                        <Input 
+                        <Input
                           id="firstName"
-                          name="firstName" 
-                          required 
+                          name="firstName"
+                          required
                           className="mt-1"
                           placeholder="Your first name"
                         />
                       </div>
                       <div>
                         <Label htmlFor="lastName">Last Name *</Label>
-                        <Input 
+                        <Input
                           id="lastName"
-                          name="lastName" 
-                          required 
+                          name="lastName"
+                          required
                           className="mt-1"
                           placeholder="Your last name"
                         />
@@ -145,11 +217,11 @@ export default function Contact() {
 
                     <div>
                       <Label htmlFor="email">Email Address *</Label>
-                      <Input 
+                      <Input
                         id="email"
-                        name="email" 
-                        type="email" 
-                        required 
+                        name="email"
+                        type="email"
+                        required
                         className="mt-1"
                         placeholder="your.email@example.com"
                       />
@@ -157,10 +229,10 @@ export default function Contact() {
 
                     <div>
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input 
+                      <Input
                         id="phone"
-                        name="phone" 
-                        type="tel" 
+                        name="phone"
+                        type="tel"
                         className="mt-1"
                         placeholder="(555) 123-4567"
                       />
@@ -168,10 +240,10 @@ export default function Contact() {
 
                     <div>
                       <Label htmlFor="subject">Subject *</Label>
-                      <Input 
+                      <Input
                         id="subject"
-                        name="subject" 
-                        required 
+                        name="subject"
+                        required
                         className="mt-1"
                         placeholder="What is this regarding?"
                       />
@@ -179,11 +251,11 @@ export default function Contact() {
 
                     <div>
                       <Label htmlFor="message">Message *</Label>
-                      <Textarea 
+                      <Textarea
                         id="message"
-                        name="message" 
-                        required 
-                        className="mt-1" 
+                        name="message"
+                        required
+                        className="mt-1"
                         rows={5}
                         placeholder="Tell us how we can help you..."
                       />
@@ -193,8 +265,8 @@ export default function Contact() {
                       <p>* Required fields</p>
                     </div>
 
-                    <Button 
-                      type="submit" 
+                    <Button
+                      type="submit"
                       className="w-full bg-soft-pink hover:bg-pink-600 text-white py-3"
                     >
                       Send Message

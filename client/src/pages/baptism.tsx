@@ -72,9 +72,108 @@ export default function Baptism() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Baptism Dresses & Outfits - Bambini's World</title>
-        <meta name="description" content="Beautiful baptism dresses and christening gowns for your little one's special day. Shop Piccolo Bacio, Lito, Teter Warm, and Christl Helen collections." />
-        <meta name="keywords" content="baptism dresses, christening gowns, baptism outfits, Piccolo Bacio, Lito, Teter Warm, Christl Helen" />
+        <link rel="canonical" href="https://bambinisworld.com/baptism" />
+        <title>Baptism Outfits & Christening Gowns | Bambini's World</title>
+        <meta
+          name="description"
+          content="Explore our collection of elegant baptism gowns, christening suits, and accessories for infants and toddlers. Featuring Piccolo Bacio, Lito, and more."
+        />
+        <meta
+          name="keywords"
+          content="baptism dresses, christening gowns, baby blessing outfits, Piccolo Bacio, Lito baptism, Teter Warm, Christil Helen, Warrington PA boutique"
+        />
+
+        {/* Open Graph metadata */}
+        <meta
+          property="og:title"
+          content="Baptism Outfits & Christening Gowns | Bambini's World"
+        />
+        <meta
+          property="og:description"
+          content="Shop timeless baptism and christening outfits for babies at Bambini’s World, including exclusive gowns and suits by top designers."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bambinisworld.com/baptism" />
+        <meta
+          property="og:image"
+          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+        />
+
+        {/* Structured Data (JSON-LD) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Bambini's World",
+            url: "https://bambinisworld.com/baptism",
+            image: "https://bambinisworld.netlify.app/images/bambiniShop.webp",
+            description:
+              "Bambini's World offers exquisite baptism dresses and christening outfits for boys and girls from top brands like Piccolo Bacio, Lito, and Teter Warm.",
+            telephone: "+1-215-230-4572",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "1589 N Main Street",
+              addressLocality: "Warrington",
+              addressRegion: "PA",
+              postalCode: "18976",
+              addressCountry: "US",
+            },
+            openingHours: "Mo-Sa 10:00-18:00, Su 12:00-16:00",
+            areaServed: {
+              "@type": "Place",
+              name: [
+                "Warrington",
+                "Doylestown",
+                "Warminster",
+                "Chalfont",
+                "Newtown",
+                "Buckingham",
+              ],
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Baptism & Christening Collection",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Piccolo Bacio Gowns",
+                    description:
+                      "Luxury baptism gowns designed by Josephine Zecca.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Lito Baptism Wear",
+                    description:
+                      "Classic children’s special occasion apparel including gowns and suits.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Teter Warm Outfits",
+                    description:
+                      "High-end handcrafted baptism garments with heirloom quality.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Christil Helen Dresses",
+                    description:
+                      "Beautiful designs symbolizing the Sacrament of Initiation.",
+                  },
+                },
+              ],
+            },
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="bg-white py-16">
@@ -90,9 +189,9 @@ export default function Baptism() {
                 heirloom that connects the memories of each child’s christening.
                 Explore our selection for both boys and girls.
               </p>
-              <Button 
+              <Button
                 className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3"
-                onClick={() => window.location.href = "/store"}
+                onClick={() => (window.location.href = "/store")}
               >
                 Shop Now
               </Button>

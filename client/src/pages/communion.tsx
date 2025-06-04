@@ -57,9 +57,101 @@ export default function Communion() {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>First Communion Dresses - Bambini's World</title>
-        <meta name="description" content="Elegant First Holy Communion dresses and suits. Shop Macis Design, Joan Calabrese, and Teter Warm collections for your child's special celebration." />
-        <meta name="keywords" content="communion dresses, first communion, communion suits, Macis Design, Joan Calabrese, first holy communion" />
+        <link rel="canonical" href="https://bambinisworld.com/communion" />
+        <title>
+          First Communion Dresses | Elegant Gowns by Bambini's World
+        </title>
+        <meta
+          name="description"
+          content="Shop First Communion dresses for girls from Macis Design, Teter Warm, and more. Elegant, timeless gowns for this special faith milestone."
+        />
+        <meta
+          name="keywords"
+          content="First Communion dresses, white communion gowns, Macis Design, Teter Warm, communion veils, Warrington PA children’s boutique"
+        />
+
+        {/* Open Graph metadata */}
+        <meta
+          property="og:title"
+          content="First Communion Dresses | Elegant Gowns by Bambini's World"
+        />
+        <meta
+          property="og:description"
+          content="Explore premium First Communion dresses for girls at Bambini’s World. Featuring Macis Design, Teter Warm, and other top brands."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://bambinisworld.com/communion" />
+        <meta
+          property="og:image"
+          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+        />
+
+        {/* Structured Data (JSON-LD) */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Bambini's World",
+            url: "https://bambinisworld.com/communion",
+            image: "https://bambinisworld.netlify.app/images/bambiniShop.webp",
+            description:
+              "Bambini's World offers beautiful First Communion dresses and accessories from Macis Design, Teter Warm, and more. Elegant styles for this sacred occasion.",
+            telephone: "+1-215-230-4572",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "1589 N Main Street",
+              addressLocality: "Warrington",
+              addressRegion: "PA",
+              postalCode: "18976",
+              addressCountry: "US",
+            },
+            openingHours: "Mo-Sa 10:00-18:00, Su 12:00-16:00",
+            areaServed: {
+              "@type": "Place",
+              name: [
+                "Warrington",
+                "Doylestown",
+                "Warminster",
+                "Chalfont",
+                "Newtown",
+                "Buckingham",
+              ],
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "First Communion Dresses",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Macis Design Communion Gowns",
+                    description:
+                      "Luxurious custom-designed dresses with unique detailing.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Teter Warm Communion Dresses",
+                    description:
+                      "Heirloom-quality dresses designed with timeless elegance.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Product",
+                    name: "Veils & Accessories",
+                    description:
+                      "Beautiful veils, gloves, and more for the perfect First Communion look.",
+                  },
+                },
+              ],
+            },
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="bg-white py-16">
@@ -74,9 +166,9 @@ export default function Communion() {
                 commitment to their faith. Explore our collection of dresses,
                 suits and accessories.
               </p>
-              <Button 
+              <Button
                 className="bg-soft-pink hover:bg-pink-600 text-white px-8 py-3"
-                onClick={() => window.location.href = "/store"}
+                onClick={() => (window.location.href = "/store")}
               >
                 Shop Now
               </Button>
