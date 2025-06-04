@@ -46,7 +46,7 @@ export default function Header() {
           <Link href="/">
             <div className="flex items-center space-x-3">
               <img
-                src="/assets/images/bambiniLogo.png"
+                src="/images/bambiniLogo.png"
                 alt="Bambini's World Logo"
                 className="h-12 w-auto"
               />
