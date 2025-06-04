@@ -14,7 +14,7 @@ const communionProducts = [
     name: "Macis Design",
     description:
       "Macis Design is committed to designing and manufacturing gowns of high quality, unique design and lots of detail. The company’s private owned factory allows them to ensure one of a kind design. For special orders or sizing guides stop in our store or give us a call.",
-    image: "assets/images/macis.webp",
+    image: "/images/macis.webp",
     buttonColor: "bg-soft-pink",
   },
   {
@@ -22,7 +22,7 @@ const communionProducts = [
     name: "Joan Calabrese",
     description:
       "In August of 2021 Macis Designs began a partnership with the Calabrese family to continue producing the Joan Calabrese line under the name Joan Calabrese for Macis Design. For special orders or sizing guides stop in our store or give us a call.",
-    image: "assets/images/calabrese.webp",
+    image: "/images/calabrese.webp",
     buttonColor: "bg-light-blue",
   },
   {
@@ -30,7 +30,7 @@ const communionProducts = [
     name: "Teter Warm",
     description:
       "Founded in 2023 in Richmond Hill, Teter Warm understands that clothing is more than just a necessity; it is a form of self-expression. Every item in our store is also available online and vice versa.  If you see the item within our online store, you can come see it in the store as well. Special orders available upon request and availability.",
-    image: "assets/images/teter2.webp",
+    image: "/images/teter2.webp",
     buttonColor: "bg-navy",
   },
 ];
@@ -40,14 +40,14 @@ const featuredDresses = [
     id: 1,
     name: "121307 Joan Calabrese",
     price: "$329.00",
-    image: "assets/images/121307.jpg",
+    image: "/images/121307.jpg",
     storeUrl: "/store#!/121307-Joan-Calabrese/p/585758401",
   },
   {
     id: 2,
     name: "Maci's Design 121306",
     price: "$350.00",
-    image: "assets/images/121306.jpg",
+    image: "/images/121306.jpg",
     storeUrl: "/store#!/Macis-design-121306/p/583923812",
   },
 ];
@@ -77,7 +77,7 @@ export default function Communion() {
             </div>
             <div>
               <img
-                src="assets/images/stairs.webp"
+                src="/images/stairs.webp"
                 alt="First Holy Communion dress"
                 className="rounded-xl shadow-lg w-full h-auto"
               />

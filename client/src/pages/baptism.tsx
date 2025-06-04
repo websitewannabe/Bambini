@@ -14,7 +14,7 @@ const baptismProducts = [
     name: "Piccolo Bacio",
     description:
       "Piccolo Bacio is a couture brand by Josephine Zecca, that has been on the market since 2001. Every item in our store is also available online and vice versa.  We can place special orders for sizing or fabric choice (depending on availability)",
-    image: "assets/images/piccolo.webp",
+    image: "/images/piccolo.webp",
     buttonColor: "bg-warm-orange",
   },
   {
@@ -22,7 +22,7 @@ const baptismProducts = [
     name: "Lito",
     description:
       "Lito Children’s Wear began in 1973 as a children’s special occasion apparel boutique based in Long Beach, California. We have a special selection available for special order in store, stop in or call us for more information.",
-    image: "assets/images/lito.webp",
+    image: "/images/lito.webp",
     buttonColor: "bg-soft-pink",
   },
   {
@@ -30,7 +30,7 @@ const baptismProducts = [
     name: "Teter Warm",
     description:
       "Founded in 2023 in Richmond Hill, Teter Warm understands that clothing is more than just a necessity; it is a form of self-expression. Every item in our store is also available online and vice versa.  If you see the item within our online store, you can come see it in the store as well. Special orders available upon request and availability.",
-    image: "assets/images/teterwarm.webp",
+    image: "/images/teterwarm.webp",
     buttonColor: "bg-light-blue",
   },
   {
@@ -38,7 +38,7 @@ const baptismProducts = [
     name: "Christl Helen",
     description:
       "Baptism, First Holy Communion and Confirmation are collectively known as The Sacrament of Initiation into The Catholic Church. Christi Helen brings these Sacraments to life with their beautiful designs. If you see the item within our online store, you can come see it in the store as well. ",
-    image: "assets/images/christi.webp",
+    image: "/images/christi.webp",
     buttonColor: "bg-soft-pink",
   },
 ];
@@ -55,14 +55,14 @@ const popularDresses = [
     id: 2,
     name: "Magdalena",
     price: "$390.00",
-    image: "assets/images/magdalena.jpg",
+    image: "/images/magdalena.jpg",
     storeUrl: "store#!/Magdalena/p/580049386",
   },
   {
     id: 3,
     name: "Blue Willie",
     price: "$365.00",
-    image: "assets/images/blue.jpg",
+    image: "/images/blue.jpg",
     storeUrl: "/store#!/Blue-Willie/p/580096272",
   },
 ];
@@ -93,7 +93,7 @@ export default function Baptism() {
             </div>
             <div>
               <img
-                src="assets/images/baptismDress.jpg"
+                src="/images/baptismDress.jpg"
                 alt="Baptism dress"
                 className="rounded-xl shadow-lg w-full h-auto"
               />
