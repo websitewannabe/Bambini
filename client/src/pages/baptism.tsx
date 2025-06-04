@@ -48,7 +48,7 @@ const popularDresses = [
     id: 1,
     name: "Vanina",
     price: "$390.00",
-    image: "/assets/images/vanina.jpg",
+    image: "/images/vanina.jpg",
     storeUrl: "/store#!/Vanina/p/580065611/",
   },
   {

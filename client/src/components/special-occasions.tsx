@@ -26,7 +26,7 @@ export default function SpecialOccasions() {
           </div>
           <div>
             <img
-              src="assets/images/dressImage.webp"
+              src="/images/dressImage.webp"
               alt="Special occasion dresses"
               className="rounded-xl shadow-lg w-full h-64 object-cover"
             />
@@ -38,25 +38,25 @@ export default function SpecialOccasions() {
           <div className="order-2 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="assets/images/zebra.jpeg"
+                src="/images/zebra.jpeg"
                 alt="Zebra plush toy"
                 className="rounded-lg shadow-md"
                 style={{ border: "3px dotted #FFB85C" }}
               />
               <img
-                src="/assets/images/babybling.webp"
+                src="/images/babybling.webp"
                 alt="Baby bling accessories"
                 className="rounded-lg shadow-md"
                 style={{ border: "3px dotted #FFB85C" }}
               />
               <img
-                src="assets/images/lion.jpeg"
+                src="/images/lion.jpeg"
                 alt="Lion plush toy"
                 className="rounded-lg shadow-md"
                 style={{ border: "3px dotted #FFB85C" }}
               />
               <img
-                src="assets/images/book.webp"
+                src="/images/book.webp"
                 alt="Children's book"
                 className="rounded-lg shadow-md"
                 style={{ border: "3px dotted #FFB85C" }}
@@ -109,12 +109,12 @@ export default function SpecialOccasions() {
           <div>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src="assets/images/boy.webp"
+                src="/images/boy.webp"
                 alt="Boys formal outfit"
                 className="rounded-lg shadow-md"
               />
               <img
-                src="assets/images/boyclothes.webp"
+                src="/images/boyclothes.webp"
                 alt="Boys casual outfit"
                 className="rounded-lg shadow-md"
               />
