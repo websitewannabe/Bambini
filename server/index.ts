@@ -8,6 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Serve static files from public directory
 app.use('/assets', express.static('public'));
+app.use(express.static('public'));
 
 app.use((req, res, next) => {
   const start = Date.now();
