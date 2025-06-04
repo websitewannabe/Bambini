@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, User, ArrowRight } from "lucide-react";
@@ -39,6 +40,11 @@ const blogPosts = [
 export default function Blog() {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Blog - Bambini's World</title>
+        <meta name="description" content="Expert advice, styling tips, and heartwarming stories about children's fashion and special occasions from Bambini's World." />
+        <meta name="keywords" content="children's fashion blog, parenting tips, styling advice, special occasions, kids fashion trends" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-navy to-light-blue py-16">
         <div className="container mx-auto px-4">

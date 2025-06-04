@@ -1,7 +1,14 @@
 
+import { Helmet } from "react-helmet";
+
 export default function TermsConditions() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Terms and Conditions - Bambini's World</title>
+        <meta name="description" content="Read the terms and conditions for using Bambini's World website and services." />
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-8">
           <h1 className="text-3xl font-bold text-navy mb-6">Terms and Conditions</h1>

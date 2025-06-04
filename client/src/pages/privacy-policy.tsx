@@ -1,7 +1,14 @@
 
+import { Helmet } from "react-helmet";
+
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Privacy Policy - Bambini's World</title>
+        <meta name="description" content="Read Bambini's World privacy policy to understand how we collect, use, and protect your personal information." />
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-8">
           <h1 className="text-3xl font-bold text-navy mb-6">Privacy Policy</h1>

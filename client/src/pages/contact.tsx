@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -9,6 +10,11 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>Contact Us - Bambini's World</title>
+        <meta name="description" content="Get in touch with Bambini's World. Visit our store in Warrington, PA or contact us for questions about children's apparel and special occasion dresses." />
+        <meta name="keywords" content="contact, Bambini's World, Warrington PA, children's boutique, store hours, directions" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-navy text-white py-16">
         <div className="container mx-auto px-4">

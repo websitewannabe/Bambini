@@ -1,5 +1,6 @@
 
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 export default function Search() {
   useEffect(() => {
@@ -47,6 +48,11 @@ export default function Search() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Search Products - Bambini's World</title>
+        <meta name="description" content="Search our complete collection of children's apparel, communion and baptism dresses, accessories, and gifts. Find exactly what you're looking for." />
+        <meta name="keywords" content="search, find products, children's clothing, baptism dresses, communion dresses, kids accessories" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">

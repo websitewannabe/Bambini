@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -70,6 +71,11 @@ const popularDresses = [
 export default function Baptism() {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Baptism Dresses & Outfits - Bambini's World</title>
+        <meta name="description" content="Beautiful baptism dresses and christening gowns for your little one's special day. Shop Piccolo Bacio, Lito, Teter Warm, and Christl Helen collections." />
+        <meta name="keywords" content="baptism dresses, christening gowns, baptism outfits, Piccolo Bacio, Lito, Teter Warm, Christl Helen" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">

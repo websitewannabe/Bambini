@@ -1,5 +1,6 @@
 
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 export default function Store() {
   useEffect(() => {
@@ -31,6 +32,11 @@ export default function Store() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>Shop Online - Bambini's World</title>
+        <meta name="description" content="Browse our complete online collection of children's apparel, communion and baptism dresses, accessories, and gifts. Shop now at Bambini's World." />
+        <meta name="keywords" content="online store, children's clothing, shop online, kids fashion, baptism dresses, communion dresses" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">

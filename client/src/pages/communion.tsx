@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -55,6 +56,11 @@ const featuredDresses = [
 export default function Communion() {
   return (
     <div className="min-h-screen bg-white">
+      <Helmet>
+        <title>First Communion Dresses - Bambini's World</title>
+        <meta name="description" content="Elegant First Holy Communion dresses and suits. Shop Macis Design, Joan Calabrese, and Teter Warm collections for your child's special celebration." />
+        <meta name="keywords" content="communion dresses, first communion, communion suits, Macis Design, Joan Calabrese, first holy communion" />
+      </Helmet>
       {/* Hero Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
