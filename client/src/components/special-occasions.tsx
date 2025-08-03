@@ -5,7 +5,7 @@ export default function SpecialOccasions() {
     <section className="py-16 bg-gradient-to-r from-blue-50 to-pink-50">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div>
+          <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold mb-4">
               <span style={{ color: "#F8B4BE" }}>A Dress For That</span>
               <br />
@@ -24,7 +24,7 @@ export default function SpecialOccasions() {
               Shop Now
             </Button>
           </div>
-          <div>
+          <div className="order-1 md:order-2">
             <img
               src="/images/dressImage.webp"
               alt="Special occasion dresses"
@@ -85,7 +85,7 @@ export default function SpecialOccasions() {
 
         {/* Boys Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="order-2 md:order-1">
             <h2 className="text-3xl font-bold text-navy mb-4">
               Your Little Man
               <br />
@@ -106,7 +106,7 @@ export default function SpecialOccasions() {
               Shop Now
             </Button>
           </div>
-          <div>
+          <div className="order-1 md:order-2">
             <div className="grid grid-cols-2 gap-4">
               <img
                 src="/images/boy.webp"
