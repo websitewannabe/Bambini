@@ -10,32 +10,41 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <link rel="canonical" href="https://bambinisworld.com/contact" />
-        <title>Contact Bambini's World | Visit or Send Us a Message</title>
+        <link rel="canonical" href="https://bambinisworld.com/contact-us" />
+        <title>Contact Bambini's World | Customer Service & Store Information</title>
         <meta
           name="description"
-          content="Have a question or need assistance? Contact Bambini's World in Warrington, PA via phone, email, or our contact form. We’re here to help."
+          content="Contact Bambini's World children's boutique in Warrington, PA. Call 215-230-4572, email us, or visit our store at 1589 N Main Street. Customer service hours: Mon-Sat 11AM-6PM, Sun 12PM-4PM."
         />
-        <meta
-          name="keywords"
-          content="contact Bambini's World, baby boutique contact, Warrington PA store, customer service, kids clothing store contact"
-        />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
         {/* Open Graph metadata */}
         <meta
           property="og:title"
-          content="Contact Bambini's World | Visit or Send Us a Message"
+          content="Contact Bambini's World | Customer Service & Store Information"
         />
         <meta
           property="og:description"
-          content="Reach out to Bambini's World for help with your order or visit us in-store in Warrington, PA."
+          content="Get in touch with Bambini's World for customer service, orders, or store information. Located in Warrington, PA. Phone: 215-230-4572."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://bambinisworld.com/contact" />
+        <meta property="og:url" content="https://bambinisworld.com/contact-us" />
+        <meta property="og:site_name" content="Bambini's World" />
+        <meta property="og:locale" content="en_US" />
         <meta
           property="og:image"
-          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+          content="https://bambinisworld.com/images/bambiniShop.webp"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Bambini's World storefront and contact information" />
+
+        {/* Twitter Card metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Bambini's World | Customer Service & Store Info" />
+        <meta name="twitter:description" content="Contact us for customer service, orders, or store information. Located in Warrington, PA. Phone: 215-230-4572." />
+        <meta name="twitter:image" content="https://bambinisworld.com/images/bambiniShop.webp" />
+        <meta name="twitter:image:alt" content="Bambini's World contact information" />
 
         {/* Structured Data (JSON-LD) */}
         <script type="application/ld+json">
@@ -43,7 +52,7 @@ export default function Contact() {
             "@context": "https://schema.org",
             "@type": "ContactPage",
             name: "Contact Bambini's World",
-            url: "https://bambinisworld.com/contact",
+            url: "https://bambinisworld.com/contact-us",
             description:
               "Contact Bambini's World for customer support, store hours, or general inquiries. Located in Warrington, PA, we offer multiple ways to get in touch.",
             contactOption: [

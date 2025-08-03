@@ -8,6 +8,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const baptismProducts = [
   {
@@ -73,31 +81,40 @@ export default function Baptism() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <link rel="canonical" href="https://bambinisworld.com/baptism" />
-        <title>Baptism Outfits & Christening Gowns | Bambini's World</title>
+        <title>Premium Baptism Dresses & Christening Gowns | Piccolo Bacio, Lito & More</title>
         <meta
           name="description"
-          content="Explore our collection of elegant baptism gowns, christening suits, and accessories for infants and toddlers. Featuring Piccolo Bacio, Lito, and more."
+          content="Shop exquisite baptism dresses and christening gowns at Bambini's World. Featuring luxury brands Piccolo Bacio, Lito, Teter Warm, and Christil Helen. Heirloom quality gowns and suits for your baby's special day in Warrington, PA."
         />
-        <meta
-          name="keywords"
-          content="baptism dresses, christening gowns, baby blessing outfits, Piccolo Bacio, Lito baptism, Teter Warm, Christil Helen, Warrington PA boutique"
-        />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
         {/* Open Graph metadata */}
         <meta
           property="og:title"
-          content="Baptism Outfits & Christening Gowns | Bambini's World"
+          content="Premium Baptism Dresses & Christening Gowns | Piccolo Bacio, Lito & More"
         />
         <meta
           property="og:description"
-          content="Shop timeless baptism and christening outfits for babies at Bambini’s World, including exclusive gowns and suits by top designers."
+          content="Discover timeless baptism and christening outfits for babies at Bambini's World. Luxury designer gowns and suits from Piccolo Bacio, Lito, Teter Warm, and Christil Helen."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bambinisworld.com/baptism" />
+        <meta property="og:site_name" content="Bambini's World" />
+        <meta property="og:locale" content="en_US" />
         <meta
           property="og:image"
-          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+          content="https://bambinisworld.com/images/baptismDress.jpg"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Beautiful baptism dress collection at Bambini's World" />
+
+        {/* Twitter Card metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Premium Baptism Dresses & Christening Gowns | Bambini's World" />
+        <meta name="twitter:description" content="Luxury baptism and christening outfits from top designers. Heirloom quality gowns and suits for your baby's special day." />
+        <meta name="twitter:image" content="https://bambinisworld.com/images/baptismDress.jpg" />
+        <meta name="twitter:image:alt" content="Elegant baptism dress collection" />
 
         {/* Structured Data (JSON-LD) */}
         <script type="application/ld+json">
@@ -106,7 +123,7 @@ export default function Baptism() {
             "@type": "LocalBusiness",
             name: "Bambini's World",
             url: "https://bambinisworld.com/baptism",
-            image: "https://bambinisworld.netlify.app/images/bambiniShop.webp",
+            image: "https://bambinisworld.com/images/baptismDress.jpg",
             description:
               "Bambini's World offers exquisite baptism dresses and christening outfits for boys and girls from top brands like Piccolo Bacio, Lito, and Teter Warm.",
             telephone: "+1-215-230-4572",
@@ -174,7 +191,45 @@ export default function Baptism() {
             },
           })}
         </script>
+
+        {/* Breadcrumb Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://bambinisworld.com/"
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Baptism",
+                item: "https://bambinisworld.com/baptism"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
+      
+      {/* Breadcrumb Navigation */}
+      <div className="container mx-auto px-4 py-4">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Baptism</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+
       {/* Hero Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
@@ -200,7 +255,7 @@ export default function Baptism() {
               <img
                 src="/images/baptismDress.jpg"
                 alt="Baptism dress"
-                className="rounded-xl shadow-lg w-full h-auto"
+                className="rounded-[5px] w-full h-auto max-w-md mx-auto max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -220,7 +275,7 @@ export default function Baptism() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="rounded-xl shadow-lg w-full h-auto"
+                    className="rounded-[5px] w-full h-auto max-w-lg mx-auto max-h-[500px] object-contain"
                   />
                 </div>
                 <div className={index % 2 === 1 ? "md:order-1" : ""}>
@@ -268,7 +323,7 @@ export default function Baptism() {
                       <img
                         src={dress.image}
                         alt={dress.name}
-                        className="w-full h-80 object-cover"
+                        className="w-full h-64 md:h-80 object-cover max-h-[500px]"
                       />
                     </div>
                     <CardContent className="p-6 text-center">

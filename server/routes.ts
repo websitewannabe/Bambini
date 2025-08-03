@@ -168,6 +168,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Sitemap route
+  app.get("/sitemap.xml", (req, res) => {
+    res.setHeader('Content-Type', 'application/xml');
+    res.sendFile('sitemap.xml', { root: './public' });
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

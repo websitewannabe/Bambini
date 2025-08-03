@@ -59,32 +59,41 @@ export default function Communion() {
       <Helmet>
         <link rel="canonical" href="https://bambinisworld.com/communion" />
         <title>
-          First Communion Dresses | Elegant Gowns by Bambini's World
+          First Communion Dresses | Premium White Gowns by Macis Design & Teter Warm
         </title>
         <meta
           name="description"
-          content="Shop First Communion dresses for girls from Macis Design, Teter Warm, and more. Elegant, timeless gowns for this special faith milestone."
+          content="Shop exquisite First Communion dresses at Bambini's World. Featuring elegant white gowns from Macis Design, Teter Warm, and premium designers. Perfect for your daughter's sacred milestone in Warrington, PA."
         />
-        <meta
-          name="keywords"
-          content="First Communion dresses, white communion gowns, Macis Design, Teter Warm, communion veils, Warrington PA children’s boutique"
-        />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
         {/* Open Graph metadata */}
         <meta
           property="og:title"
-          content="First Communion Dresses | Elegant Gowns by Bambini's World"
+          content="First Communion Dresses | Premium White Gowns by Macis Design & Teter Warm"
         />
         <meta
           property="og:description"
-          content="Explore premium First Communion dresses for girls at Bambini’s World. Featuring Macis Design, Teter Warm, and other top brands."
+          content="Discover beautiful First Communion dresses for girls at Bambini's World. Elegant, timeless white gowns from top designers for this special faith milestone."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bambinisworld.com/communion" />
+        <meta property="og:site_name" content="Bambini's World" />
+        <meta property="og:locale" content="en_US" />
         <meta
           property="og:image"
-          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+          content="https://bambinisworld.com/images/communion.webp"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Beautiful First Communion dress collection at Bambini's World" />
+
+        {/* Twitter Card metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="First Communion Dresses | Premium White Gowns | Bambini's World" />
+        <meta name="twitter:description" content="Elegant First Communion dresses from Macis Design, Teter Warm, and top designers. Perfect for your daughter's sacred milestone." />
+        <meta name="twitter:image" content="https://bambinisworld.com/images/communion.webp" />
+        <meta name="twitter:image:alt" content="First Communion dress collection" />
 
         {/* Structured Data (JSON-LD) */}
         <script type="application/ld+json">
@@ -93,7 +102,7 @@ export default function Communion() {
             "@type": "LocalBusiness",
             name: "Bambini's World",
             url: "https://bambinisworld.com/communion",
-            image: "https://bambinisworld.netlify.app/images/bambiniShop.webp",
+            image: "https://bambinisworld.com/images/communion.webp",
             description:
               "Bambini's World offers beautiful First Communion dresses and accessories from Macis Design, Teter Warm, and more. Elegant styles for this sacred occasion.",
             telephone: "+1-215-230-4572",
@@ -177,7 +186,7 @@ export default function Communion() {
               <img
                 src="/images/stairs.webp"
                 alt="First Holy Communion dress"
-                className="rounded-xl shadow-lg w-full h-auto"
+                className="rounded-[5px] w-full h-auto max-w-md mx-auto max-h-[500px] object-contain"
               />
             </div>
           </div>
@@ -197,7 +206,7 @@ export default function Communion() {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="rounded-xl shadow-lg w-full h-auto"
+                    className="rounded-[5px] w-full h-auto max-w-lg mx-auto max-h-[500px] object-contain"
                   />
                 </div>
                 <div className={index % 2 === 1 ? "md:order-1" : ""}>
@@ -247,7 +256,7 @@ export default function Communion() {
                       <img
                         src={dress.image}
                         alt={dress.name}
-                        className="w-full h-80 object-cover"
+                        className="w-full h-64 md:h-80 object-cover max-h-[500px]"
                       />
                     </div>
                     <CardContent className="p-6 text-center">

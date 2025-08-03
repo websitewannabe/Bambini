@@ -38,8 +38,10 @@ export default function Hero() {
           <div className="relative">
             <img
               src="/images/bambiniShop.webp"
-              alt="Bambini's World Shop"
+              alt="Bambini's World children's boutique storefront showcasing premium baby and toddler clothing in Warrington, PA"
               className="rounded-xl shadow-lg w-full h-auto border-4 border-light-blue"
+              loading="eager"
+              fetchpriority="high"
             />
           </div>
         </div>

@@ -71,7 +71,8 @@ export default function ProductCategories() {
               <div className="relative overflow-hidden aspect-[4/3]">
                 <img
                   src={category.image}
-                  alt={category.name}
+                  alt={`${category.name} - ${category.description} at Bambini's World children's boutique`}
+                  loading="lazy"
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -115,7 +116,8 @@ export default function ProductCategories() {
               <div className="relative overflow-hidden aspect-[4/3]">
                 <img
                   src={category.image}
-                  alt={category.name}
+                  alt={`${category.name} - ${category.description} at Bambini's World children's boutique`}
+                  loading="lazy"
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

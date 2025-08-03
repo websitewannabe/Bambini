@@ -34,31 +34,40 @@ export default function Store() {
     <div className="min-h-screen bg-white">
       <Helmet>
         <link rel="canonical" href="https://bambinisworld.com/store" />
-        <title>Shop Children's Clothing & Gifts | Bambini's World Store</title>
+        <title>Shop Premium Children's Clothing & Gifts | Bambini's World Online Store</title>
         <meta
           name="description"
-          content="Browse Bambini's World store for baby and toddler clothes, christening dresses, communion gowns, shoes, accessories, and gifts. Located in Warrington, PA."
+          content="Shop Bambini's World online store for premium baby and toddler clothes, baptism dresses, communion gowns, shoes, and accessories. Featuring Piccolo Bacio, Lito, Teter Warm, and Christil Helen. Free shipping available."
         />
-        <meta
-          name="keywords"
-          content="baby clothes, toddler outfits, baptism dresses, communion dresses, christening outfits, kids shoes, gift boutique, Warrington PA store"
-        />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
         {/* Open Graph metadata */}
         <meta
           property="og:title"
-          content="Shop Children's Clothing & Gifts | Bambini's World Store"
+          content="Shop Premium Children's Clothing & Gifts | Bambini's World Online Store"
         />
         <meta
           property="og:description"
-          content="Explore our full collection of children's clothing, dresses, and gifts for special occasions at Bambini's World in Warrington, PA."
+          content="Explore our complete collection of designer children's clothing, baptism dresses, communion gowns, and special occasion wear. Premium brands for infants and toddlers."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bambinisworld.com/store" />
+        <meta property="og:site_name" content="Bambini's World" />
+        <meta property="og:locale" content="en_US" />
         <meta
           property="og:image"
-          content="https://bambinisworld.netlify.app/images/bambiniShop.webp"
+          content="https://bambinisworld.com/images/bambiniShop.webp"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Bambini's World online store featuring children's clothing and gifts" />
+
+        {/* Twitter Card metadata */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Shop Premium Children's Clothing | Bambini's World Store" />
+        <meta name="twitter:description" content="Designer children's clothing, baptism dresses, and special occasion wear from top brands. Shop online or visit our Warrington, PA store." />
+        <meta name="twitter:image" content="https://bambinisworld.com/images/bambiniShop.webp" />
+        <meta name="twitter:image:alt" content="Bambini's World online store collection" />
 
         {/* Structured Data (JSON-LD) */}
         <script type="application/ld+json">
@@ -67,7 +76,7 @@ export default function Store() {
             "@type": "LocalBusiness",
             name: "Bambini's World",
             url: "https://bambinisworld.com/store",
-            image: "https://bambinisworld.netlify.app/images/bambiniShop.webp",
+            image: "https://bambinisworld.com/images/bambiniShop.webp",
             description:
               "Bambini's World offers a complete selection of children’s apparel, baptism and communion wear, gifts, shoes, and accessories for infants and toddlers.",
             telephone: "+1-215-230-4572",
