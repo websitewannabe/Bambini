@@ -11,11 +11,16 @@ export default function CustomerReviews() {
   } = useQuery<Review[]>({
     queryKey: ["/api/reviews"],
     queryFn: async () => {
+      console.log('Fetching reviews from /api/reviews...');
       const response = await fetch("/api/reviews");
+      console.log('Response status:', response.status);
       if (!response.ok) {
+        console.error('Failed to fetch reviews:', response.status, response.statusText);
         throw new Error("Failed to fetch reviews");
       }
-      return response.json();
+      const data = await response.json();
+      console.log('Reviews data:', data);
+      return data;
     },
   });
 
@@ -37,7 +42,7 @@ export default function CustomerReviews() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <p className="text-gray-600">
-              Unable to load reviews at this time.
+              Unable to load reviews at this time. Please try again later.
             </p>
           </div>
         </div>
