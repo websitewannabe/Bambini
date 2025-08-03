@@ -35,7 +35,7 @@ export default function SpecialOccasions() {
 
         {/* Accessories Section */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="order-2 md:order-1">
+          <div className="order-1 md:order-1">
             <div className="grid grid-cols-2 gap-4">
               <img
                 src="/images/zebra.jpeg"
@@ -63,7 +63,7 @@ export default function SpecialOccasions() {
               />
             </div>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-2 md:order-2">
             <h2 className="text-3xl font-bold text-navy mb-4">
               <span className="text-warm-orange">Accessories</span>
               <br />& Gifts

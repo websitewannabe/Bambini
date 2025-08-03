@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="order-2 md:order-1">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">
               Bambini's
               <br />
@@ -35,7 +35,7 @@ export default function Hero() {
               </Button>
             </div>
           </div>
-          <div className="relative">
+          <div className="order-1 md:order-2 relative">
             <img
               src="/images/bambiniShop.webp"
               alt="Bambini's World children's boutique storefront showcasing premium baby and toddler clothing in Warrington, PA"
