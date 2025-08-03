@@ -106,11 +106,13 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Reviews routes
   app.get("/api/reviews", async (req, res) => {
+    console.log('API /api/reviews endpoint called');
     try {
       // First try to get Google reviews
       const googleReviews = await fetchGoogleReviews();
       if (googleReviews && googleReviews.length > 0) {
         console.log(`Successfully fetched ${googleReviews.length} Google reviews`);
+        console.log('Sending Google reviews response:', JSON.stringify(googleReviews));
         res.json(googleReviews);
         return;
       }
@@ -119,6 +121,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       console.log('Google reviews not available, falling back to stored reviews');
       const reviews = await storage.getReviews();
       console.log(`Fetched ${reviews.length} stored reviews`);
+      console.log('Sending stored reviews response:', JSON.stringify(reviews));
       res.json(reviews);
     } catch (error) {
       console.error('Error fetching reviews:', error);
@@ -126,6 +129,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       try {
         const reviews = await storage.getReviews();
         console.log(`Fetched ${reviews.length} stored reviews as fallback`);
+        console.log('Sending fallback reviews response:', JSON.stringify(reviews));
         res.json(reviews);
       } catch (fallbackError) {
         console.error('Error fetching stored reviews:', fallbackError);

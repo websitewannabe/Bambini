@@ -18,9 +18,16 @@ export default function CustomerReviews() {
         console.error('Failed to fetch reviews:', response.status, response.statusText);
         throw new Error("Failed to fetch reviews");
       }
-      const data = await response.json();
-      console.log('Reviews data:', data);
-      return data;
+      
+      try {
+        const data = await response.json();
+        console.log('Reviews data:', data);
+        return data;
+      } catch (jsonError) {
+        console.error('Error parsing JSON response:', jsonError);
+        console.log('Response text:', await response.text());
+        throw new Error("Failed to parse reviews response");
+      }
     },
   });
 
