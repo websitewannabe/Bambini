@@ -6,10 +6,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Serve static files from public directory
-app.use('/assets', express.static('public'));
-app.use(express.static('public'));
-
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -50,6 +46,10 @@ app.use((req, res, next) => {
     res.status(status).json({ message });
     throw err;
   });
+
+  // Serve static files from public directory (after API routes)
+  app.use('/assets', express.static('public'));
+  app.use(express.static('public'));
 
   // importantly only setup vite in development and after
   // setting up all the other routes so the catch-all route
