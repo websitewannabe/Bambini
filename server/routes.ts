@@ -9,14 +9,20 @@ const PLACE_ID = "ChIJRSgIEyKoxokRO5o4MJeQG9Y";
 async function fetchGoogleReviews() {
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   if (!apiKey) {
-    console.log('Google Places API key not found');
+    console.log('Google Places API key not found - using fallback reviews');
     return null;
   }
 
   try {
+    console.log('Attempting to fetch Google reviews...');
     const response = await fetch(
       `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=name,reviews&key=${apiKey}`
     );
+    
+    if (!response.ok) {
+      console.error('Google Places API HTTP error:', response.status, response.statusText);
+      return null;
+    }
     
     const data = await response.json();
     
@@ -30,6 +36,8 @@ async function fetchGoogleReviews() {
       return null;
     }
 
+    console.log(`Found ${data.result.reviews.length} Google reviews`);
+    
     // Transform Google reviews to match our schema
     return data.result.reviews.map((review: any, index: number) => ({
       id: index + 1,
@@ -102,16 +110,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // First try to get Google reviews
       const googleReviews = await fetchGoogleReviews();
       if (googleReviews && googleReviews.length > 0) {
+        console.log(`Successfully fetched ${googleReviews.length} Google reviews`);
         res.json(googleReviews);
         return;
       }
       
       // Fallback to stored reviews if Google API fails
+      console.log('Google reviews not available, falling back to stored reviews');
       const reviews = await storage.getReviews();
+      console.log(`Fetched ${reviews.length} stored reviews`);
       res.json(reviews);
     } catch (error) {
       console.error('Error fetching reviews:', error);
-      res.status(500).json({ message: "Failed to fetch reviews" });
+      // Try to get stored reviews as final fallback
+      try {
+        const reviews = await storage.getReviews();
+        console.log(`Fetched ${reviews.length} stored reviews as fallback`);
+        res.json(reviews);
+      } catch (fallbackError) {
+        console.error('Error fetching stored reviews:', fallbackError);
+        res.status(500).json({ message: "Failed to fetch reviews" });
+      }
     }
   });
 

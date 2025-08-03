@@ -32,7 +32,7 @@ export default function CustomerReviews() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <p className="text-gray-600">Unable to load reviews at this time.</p>
+            <p className="text-gray-600">Unable to load reviews at this time. Please try again later.</p>
           </div>
         </div>
       </section>
