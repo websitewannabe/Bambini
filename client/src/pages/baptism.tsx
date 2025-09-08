@@ -44,9 +44,9 @@ const baptismProducts = [
   },
   {
     id: 4,
-    name: "Christl Helen",
+    name: "Christie Helen",
     description:
-      "Baptism, First Holy Communion and Confirmation are collectively known as The Sacrament of Initiation into The Catholic Church. Christi Helen brings these Sacraments to life with their beautiful designs. If you see the item within our online store, you can come see it in the store as well. ",
+      "Baptism, First Holy Communion and Confirmation are collectively known as The Sacrament of Initiation into The Catholic Church. Christie Helen brings these Sacraments to life with their beautiful designs. If you see the item within our online store, you can come see it in the store as well. ",
     image: "/images/christi.webp",
     buttonColor: "bg-soft-pink",
   },
@@ -84,7 +84,7 @@ export default function Baptism() {
         <title>Premium Baptism Dresses & Christening Gowns | Piccolo Bacio, Lito & More</title>
         <meta
           name="description"
-          content="Shop exquisite baptism dresses and christening gowns at Bambini's World. Featuring luxury brands Piccolo Bacio, Lito, Teter Warm, and Christil Helen. Heirloom quality gowns and suits for your baby's special day in Warrington, PA."
+          content="Shop exquisite baptism dresses and christening gowns at Bambini's World. Featuring luxury brands Piccolo Bacio, Lito, Teter Warm, and Christie Helen. Heirloom quality gowns and suits for your baby's special day in Warrington, PA."
         />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
@@ -95,7 +95,7 @@ export default function Baptism() {
         />
         <meta
           property="og:description"
-          content="Discover timeless baptism and christening outfits for babies at Bambini's World. Luxury designer gowns and suits from Piccolo Bacio, Lito, Teter Warm, and Christil Helen."
+          content="Discover timeless baptism and christening outfits for babies at Bambini's World. Luxury designer gowns and suits from Piccolo Bacio, Lito, Teter Warm, and Christie Helen."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bambinisworld.com/baptism" />
@@ -182,7 +182,7 @@ export default function Baptism() {
                   "@type": "Offer",
                   itemOffered: {
                     "@type": "Product",
-                    name: "Christil Helen Dresses",
+                    name: "Christie Helen Dresses",
                     description:
                       "Beautiful designs symbolizing the Sacrament of Initiation.",
                   },
