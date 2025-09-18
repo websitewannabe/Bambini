@@ -1,5 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import path from "path";
 import { storage } from "./storage";
 import { insertProductSchema, insertReviewSchema, insertCategorySchema } from "@shared/schema";
 
@@ -194,7 +195,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Sitemap route
   app.get("/sitemap.xml", (req, res) => {
     res.setHeader('Content-Type', 'application/xml');
-    res.sendFile('sitemap.xml', { root: './public' });
+    res.sendFile(path.resolve(process.cwd(), 'public', 'sitemap.xml'));
   });
 
   const httpServer = createServer(app);
